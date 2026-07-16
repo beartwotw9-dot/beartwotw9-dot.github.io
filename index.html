@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dora Yu | Finance × Product × Organizational Development</title>
+<meta name="description" content="Dora Yu | Finance × Product × Organizational Development. Designing better systems for people to learn, work, and grow."/>
+<meta property="og:title" content="Dora Yu Portfolio 2026"/>
+<meta property="og:description" content="Designing better systems for people to learn, work, and grow."/>
+<meta property="og:type" content="website"/>
+<meta name="referrer" content="no-referrer"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; form-action https://formspree.io; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests"/>
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#FAF8F4;
+  --bg2:#F4EFE6;
+  --bg3:#EDE6D8;
+  --white:#FFFDF9;
+  --sand:#E2D5C0;
+  --sage:#6B9070;
+  --sage-d:#4F7355;
+  --earth:#A0704A;
+  --amber:#C98B3A;
+  --ink:#221E16;
+  --ink2:#4A4336;
+  --muted:#8C7F6E;
+  --border:rgba(160,130,90,0.15);
+  --serif:'Noto Serif TC',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+html.dark{
+  --bg:#1C1914;
+  --bg2:#241F19;
+  --bg3:#302920;
+  --white:#2A241C;
+  --sand:#5C4E3D;
+  --sage:#87B18C;
+  --sage-d:#C8E1CB;
+  --earth:#CC9767;
+  --amber:#E0A65A;
+  --ink:#F5F1E9;
+  --ink2:#D8D0C4;
+  --muted:#A89B88;
+  --border:rgba(222,188,145,0.2);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--bg2)}
+::-webkit-scrollbar-thumb{background:var(--sand);border-radius:9px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(250,248,244,0.92);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  padding:0 2.5rem;height:58px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .25s ease,backdrop-filter .25s ease;
+}
+html.dark nav{background:rgba(28,25,20,.88)}
+nav.scrolled{backdrop-filter:blur(12px);background:rgba(250,248,244,.78)}
+html.dark nav.scrolled{background:rgba(28,25,20,.72)}
+.nav-logo{font-family:var(--serif);font-size:1.1rem;font-weight:700;color:var(--ink);letter-spacing:.02em;text-decoration:none}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{font-size:.82rem;color:var(--muted);text-decoration:none;font-weight:400;transition:color .2s;position:relative;padding-bottom:2px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1.5px;background:var(--sage);transform:scaleX(0);transition:transform .25s;transform-origin:left}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a.active{color:var(--ink)}
+.nav-links a.active::after{transform:scaleX(1)}
+.nav-cta{background:transparent!important;color:var(--muted)!important;padding-bottom:2px!important;font-weight:400!important}
+.nav-cta:hover{background:transparent!important;color:var(--ink)!important}
+.nav-cta::after{display:block!important}
+#mobile-btn{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none}
+#mobile-btn span{display:block;width:22px;height:1.5px;background:var(--ink);transition:all .3s}
+#mobile-menu{display:none;background:var(--white);border-bottom:1px solid var(--border);padding:1rem 2.5rem 1.5rem;flex-direction:column;gap:.9rem}
+#mobile-menu a{font-size:.9rem;color:var(--muted);text-decoration:none}
+#mobile-menu a:hover{color:var(--ink)}
+.theme-toggle{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--ink);display:grid;place-items:center;cursor:pointer;font-size:1rem;margin-left:.6rem;transition:all .2s}
+.theme-toggle:hover{border-color:var(--sage);color:var(--sage)}
+.lang-toggle{
+  height:34px;
+  min-width:54px;
+  padding:0 .75rem;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:var(--white);
+  color:var(--ink2);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  font-size:.78rem;
+  font-weight:700;
+  letter-spacing:.02em;
+  transition:all .2s;
+}
+.lang-toggle:hover{border-color:var(--sage);color:var(--sage)}
+#reading-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:var(--sage)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2.5rem 4rem;background:var(--bg)}
+.hero-inner{max-width:1000px;margin:0 auto;width:100%}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:2.2rem;align-items:center}
+.hero-eyebrow{font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:1.4rem}
+.hero-name{font-family:var(--serif);font-size:clamp(2.8rem,6vw,5.2rem);font-weight:700;line-height:1.08;letter-spacing:-.025em;color:var(--ink);margin-bottom:.5rem}
+.hero-name em{font-style:normal;color:var(--sage)}
+.hero-tagline{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;color:var(--ink2);margin-bottom:1.4rem;letter-spacing:-.01em}
+.hero-desc{font-size:1rem;color:var(--ink2);font-weight:400;max-width:620px;line-height:1.85;margin-bottom:2.2rem}
+.lang-zh{display:none}
+html.lang-zh-active .lang-en{display:none!important}
+html.lang-zh-active .lang-zh{display:inline!important}
+.lang-block{display:block}
+.lang-block.lang-zh{display:none}
+html.lang-zh-active .lang-block.lang-zh{display:block!important}
+.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:3rem}
+.btn-fill{background:var(--ink);color:var(--white);padding:.72rem 1.8rem;border-radius:100px;font-size:.9rem;font-weight:500;text-decoration:none;display:inline-block;transition:background .2s,transform .15s}
+.btn-fill:hover{background:var(--sage);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--ink);padding:.72rem 1.8rem;border-radius:100px;border:1px solid var(--sand);font-size:.9rem;font-weight:400;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-ghost:hover{border-color:var(--sage);color:var(--sage)}
+.btn-outline{background:transparent;color:var(--ink);padding:.72rem 1.3rem;border-radius:100px;border:1px solid var(--border);font-size:.88rem;font-weight:500;text-decoration:none;display:inline-block;transition:all .2s}
+.btn-outline:hover{border-color:var(--sage);color:var(--sage)}
+.hero-avatar-wrap{width:200px;height:200px;border-radius:50%;border:2px solid var(--sand);overflow:hidden;background:var(--bg2);justify-self:end;display:grid;place-items:center}
+#hero-avatar{width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--border);border-left:1px solid var(--border);border-radius:12px;overflow:hidden}
+.hstat{padding:1.4rem 1rem;text-align:center;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--white);transition:background .2s}
+.hstat:hover{background:var(--bg2)}
+.hstat-n{font-family:var(--serif);font-size:1.8rem;font-weight:700;color:var(--sage);display:block;line-height:1}
+.hstat-l{font-size:.75rem;color:var(--muted);margin-top:.35rem;display:block}
+
+/* ── SECTION COMMONS ── */
+.section-wrap{max-width:1080px;margin:0 auto;padding:0 2.5rem}
+.sec-eyebrow{font-size:.7rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.5rem}
+.sec-title{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;letter-spacing:-.02em;color:var(--ink);margin-bottom:.6rem}
+.sec-rule{width:40px;height:2px;background:var(--sage);border-radius:2px;margin-bottom:2.8rem}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── ABOUT ── */
+#about{padding:6rem 0;background:var(--white)}
+.about-grid{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:start}
+.about-card{background:var(--bg2);border-radius:16px;padding:2rem;border:1px solid var(--border);position:sticky;top:80px;box-shadow:0 14px 30px rgba(34,30,22,.04)}
+.about-avatar{width:96px;height:96px;border-radius:50%;margin-bottom:1.2rem;border:2px solid var(--sand);overflow:hidden;background:var(--bg3)}
+.about-avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block}
+.about-name{font-family:var(--sans);font-size:1.22rem;font-weight:700;color:var(--ink);margin-bottom:.22rem;letter-spacing:.01em;line-height:1.35;font-variant-numeric:tabular-nums}
+.about-sub{font-family:var(--sans);font-size:.9rem;color:var(--ink2);margin-bottom:1.2rem;font-weight:600;letter-spacing:.01em;font-variant-numeric:tabular-nums}
+.about-meta{display:flex;flex-direction:column;gap:.55rem}
+.about-meta-row{display:flex;align-items:flex-start;gap:.7rem;font-size:.82rem;color:var(--ink2)}
+.about-meta-icon{width:20px;flex-shrink:0;color:var(--sage);font-size:.9rem;text-align:center}
+.about-prose p{font-size:1rem;color:var(--ink2);line-height:1.9;font-weight:400;margin-bottom:1rem}
+.about-features{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem}
+.afeature{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1.1rem;transition:border-color .2s}
+.afeature:hover{border-color:var(--sage)}
+.afeature-icon{font-size:1.3rem;margin-bottom:.5rem}
+.afeature h4{font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:.25rem}
+.afeature p{font-size:.78rem;color:var(--muted);line-height:1.6}
+
+/* ── EXPERIENCE ── */
+#experience{padding:6rem 0;background:var(--bg)}
+.sub-arc{font-size:.78rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1rem}
+.tl-list{position:relative;padding-left:1.8rem}
+.tl-list::before{content:'';position:absolute;left:9px;top:14px;bottom:14px;width:1.5px;background:var(--border)}
+.tl-item{position:relative;margin-bottom:1rem;background:var(--white);border:1px solid var(--border);border-radius:14px;padding:1rem 1rem 1rem 1.25rem}
+.tl-dot{position:absolute;left:-1.65rem;top:1rem;width:14px;height:14px;border-radius:50%;background:var(--white);border:2px solid var(--sage);transition:background .2s}
+.tl-item:hover .tl-dot{background:var(--sage)}
+.tl-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.4rem;margin-bottom:.35rem}
+.tl-role{font-size:1rem;font-weight:700;color:var(--ink);font-family:var(--sans)}
+.tl-badge{font-size:.72rem;padding:.25rem .8rem;border-radius:100px;background:var(--bg3);color:var(--earth);font-weight:600}
+.tl-badge.muted{background:var(--bg2);color:var(--muted)}
+.tl-org{font-size:.85rem;color:var(--sage);font-weight:600;margin-bottom:.6rem;font-family:var(--sans)}
+.tl-list-items{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+.tl-list-items li{font-size:.86rem;color:var(--ink2);line-height:1.7;padding-left:1rem;position:relative;font-weight:400;font-family:var(--sans)}
+.tl-list-items li::before{content:'—';position:absolute;left:0;color:var(--sand)}
+.tl-list-items strong{color:var(--ink);font-weight:600}
+
+/* ── PROJECTS ── */
+#projects{padding:6rem 0;background:var(--white)}
+.competition-shell{position:relative}
+.competition-filters{display:none}
+.competition-filter{font-size:.78rem;padding:.4rem 1rem;border-radius:100px;border:1px solid var(--border);color:var(--muted);background:var(--white);cursor:pointer;transition:all .2s;font-family:var(--sans)}
+.competition-filter:hover,.competition-filter:focus-visible{border-color:var(--sage);color:var(--sage);outline:none}
+.competition-filter.active{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.competition-category-rail{display:flex;gap:.75rem;overflow-x:auto;padding:.2rem 0 .95rem;scrollbar-width:none}
+.competition-category-rail::-webkit-scrollbar{display:none}
+.competition-category-chip{flex:0 0 auto;display:flex;align-items:center;gap:.55rem;padding:.72rem 1rem;border-radius:999px;border:1px solid var(--border);background:var(--bg);text-decoration:none;color:var(--ink2);min-width:fit-content;transition:border-color .2s,transform .2s,background .2s}
+.competition-category-chip:hover,.competition-category-chip:focus-visible{border-color:var(--sage);background:var(--white);transform:translateY(-1px);outline:none}
+.competition-category-chip strong{font-size:.8rem;font-weight:700;color:var(--ink)}
+.competition-category-chip span{font-size:.72rem;color:var(--muted)}
+.carousel-wrap{position:relative}
+.competition-carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:.4rem .2rem 1rem;scrollbar-width:none;outline:none}
+.competition-carousel::-webkit-scrollbar{display:none}
+.competition-card{flex:0 0 320px;min-height:500px;height:auto;border:1px solid var(--border);border-radius:8px;background:var(--white);overflow:hidden;scroll-snap-align:start;text-decoration:none;color:inherit;box-shadow:0 12px 34px rgba(34,30,22,.06);transition:transform .35s ease,opacity .35s ease,border-color .25s,box-shadow .25s;content-visibility:auto;contain-intrinsic-size:500px 320px}
+.competition-card:hover,.competition-card:focus-visible{transform:translateY(-5px);border-color:var(--sand);box-shadow:0 18px 46px rgba(34,30,22,.1);outline:none}
+.competition-card.is-maintenance{pointer-events:none;opacity:.85}
+.competition-card.is-maintenance:hover,.competition-card.is-maintenance:focus-visible{transform:none;border-color:var(--border);box-shadow:0 12px 34px rgba(34,30,22,.06)}
+.competition-card.is-filtered{opacity:.22;transform:scale(.95);pointer-events:none}
+.competition-media{height:48%;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;color:var(--white)}
+.competition-media img{width:100%;height:100%;object-fit:cover;display:block}
+.competition-monogram{font-family:var(--serif);font-size:3.2rem;font-weight:700;color:rgba(255,253,249,.82)}
+.competition-poster{width:100%;height:100%;padding:2.2rem 1.05rem 1.15rem;display:flex;flex-direction:column;justify-content:space-between;color:var(--white);background:var(--card-gradient)}
+.competition-poster-kicker{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,253,249,.82)}
+.competition-poster-title{font-family:var(--serif);font-size:1.6rem;line-height:1.08;font-weight:700;max-width:90%;word-break:break-word}
+.competition-poster-title.small{font-size:1.28rem;line-height:1.18}
+.competition-poster-meta{display:flex;flex-wrap:wrap;gap:.35rem}
+.competition-poster-meta span{font-size:.66rem;padding:.18rem .5rem;border-radius:999px;border:1px solid rgba(255,253,249,.28);background:rgba(255,253,249,.12);color:rgba(255,253,249,.9)}
+.competition-pill{position:absolute;top:14px;border-radius:100px;padding:.24rem .68rem;font-size:.68rem;font-weight:700;line-height:1;border:1px solid rgba(255,253,249,.45);background:rgba(255,253,249,.2);color:var(--white);backdrop-filter:blur(8px);z-index:3}
+.competition-year{left:14px}
+.competition-award{right:14px;background:var(--amber);color:var(--ink);border-color:var(--amber)}
+.competition-award.muted{background:var(--bg3);color:var(--muted);border-color:var(--sand)}
+.competition-body{min-height:52%;height:auto;padding:1rem 1.05rem 1.1rem;display:flex;flex-direction:column;background:var(--white)}
+.competition-category{align-self:flex-start;background:rgba(107,144,112,.12);color:var(--sage-d);border-radius:100px;padding:.18rem .62rem;font-size:.68rem;font-weight:700;margin-bottom:.55rem}
+.competition-title{font-family:var(--serif);font-size:1rem;line-height:1.45;color:var(--ink);font-weight:700;margin-bottom:.35rem}
+.competition-summary{font-size:.8rem;color:var(--muted);line-height:1.6;font-weight:300}
+.competition-tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:auto;padding-top:.65rem}
+.competition-tag{font-size:.66rem;color:var(--muted);background:var(--bg3);border-radius:100px;padding:.16rem .5rem;max-width:160px;white-space:normal;line-height:1.3;overflow-wrap:anywhere}
+.competition-link{display:inline-flex;align-items:center;gap:.3rem;color:var(--earth);font-size:.78rem;font-weight:700;margin-top:.65rem}
+.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:var(--white);color:var(--ink);cursor:pointer;box-shadow:0 10px 24px rgba(34,30,22,.09);font-size:1.2rem;line-height:1;transition:background .2s,color .2s,transform .2s}
+.carousel-arrow:hover,.carousel-arrow:focus-visible{background:var(--ink);color:var(--white);outline:none;transform:translateY(-50%) scale(1.04)}
+.carousel-arrow.prev{left:-54px}
+.carousel-arrow.next{right:-54px}
+.carousel-controls{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:1rem}
+.carousel-dots{display:flex;gap:.45rem;align-items:center;justify-content:center}
+.carousel-dot{width:8px;height:8px;border-radius:50%;border:0;background:var(--sand);cursor:pointer;padding:0;transition:width .2s,background .2s}
+.carousel-dot.active{width:24px;border-radius:100px;background:var(--sage)}
+.carousel-toggle{border:1px solid var(--border);background:var(--white);color:var(--ink2);border-radius:100px;padding:.38rem .95rem;font-family:var(--sans);font-size:.75rem;cursor:pointer;transition:all .2s}
+.carousel-toggle:hover,.carousel-toggle:focus-visible{border-color:var(--sage);color:var(--sage);outline:none}
+
+/* ── AWARDS ── */
+#awards{padding:6rem 0;background:var(--bg)}
+.awards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.award-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:1.4rem;display:flex;gap:1.1rem;align-items:flex-start;transition:border-color .2s,transform .2s}
+.award-card:hover{border-color:var(--sand);transform:translateY(-2px)}
+.award-card.span2{grid-column:span 2}
+.award-icon{font-size:1.8rem;flex-shrink:0;line-height:1}
+.award-meta{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.4rem}
+.award-badge{font-size:.7rem;font-weight:700;padding:.2rem .7rem;border-radius:100px}
+.badge-gold{background:#FEF3C7;color:#92400E}
+.badge-sage{background:rgba(107,144,112,.13);color:var(--sage-d)}
+.badge-earth{background:rgba(160,112,74,.13);color:var(--earth)}
+.award-year{font-size:.72rem;color:var(--muted)}
+.award-title{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:.3rem}
+.award-desc{font-size:.78rem;color:var(--muted);line-height:1.6}
+.leadership-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:1.5rem}
+.lead-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.1rem;text-align:center;transition:border-color .2s}
+.lead-card:hover{border-color:var(--sage)}
+.lead-icon{font-size:1.6rem;margin-bottom:.5rem}
+.lead-title{font-size:.83rem;font-weight:600;color:var(--ink);margin-bottom:.2rem}
+.lead-sub{font-size:.75rem;color:var(--muted);line-height:1.5}
+
+/* ── COMMUNITIES / EDUCATION ── */
+#communities,#education{padding:5.4rem 0;background:var(--white)}
+#education{background:var(--bg)}
+.community-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem}
+.mini-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:1rem 1.05rem}
+.mini-card h3{font-family:var(--serif);font-size:1rem;line-height:1.35;color:var(--ink);margin-bottom:.35rem}
+.mini-meta{font-size:.78rem;color:var(--sage);font-weight:600;margin-bottom:.55rem}
+.mini-list{list-style:none;display:flex;flex-direction:column;gap:.38rem}
+.mini-list li{font-size:.86rem;color:var(--ink2);line-height:1.7;padding-left:.9rem;position:relative}
+.mini-list li::before{content:'•';position:absolute;left:0;color:var(--sage)}
+.edu-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:1.2rem 1.3rem;max-width:860px}
+.edu-school{font-family:var(--serif);font-size:1.2rem;font-weight:700;color:var(--ink)}
+.edu-dept{font-size:.95rem;color:var(--ink2);margin:.2rem 0 .85rem}
+
+/* ── SKILLS ── */
+#skills{padding:5rem 0;background:var(--white)}
+.skills-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.skillcard{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1rem;transition:border-color .2s,transform .2s,box-shadow .2s}
+.skillcard:hover{border-color:var(--sand);transform:translateY(-2px);box-shadow:0 10px 22px rgba(34,30,22,.05)}
+.skill-head{display:flex;align-items:center;gap:.5rem;margin-bottom:.65rem}
+.skill-icon{font-size:.96rem}
+.skill-cat{font-family:var(--serif);font-size:.95rem;font-weight:700;color:var(--ink)}
+.skill-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.skill-item{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;padding:.55rem .7rem;border:1px solid var(--border);border-radius:10px;background:var(--white);min-height:52px}
+.skill-main{min-width:0;display:block}
+.skill-name{font-size:.85rem;color:var(--ink2);font-weight:600;line-height:1.38;display:flex;align-items:flex-start;gap:.42rem}
+.skill-name::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sage);margin-top:.42em;flex:0 0 6px}
+.skill-meter{display:none}
+.skill-fill{display:none}
+.skill-level{display:none}
+.skill-level.adv{background:rgba(107,144,112,.16);color:var(--sage-d)}
+.skill-level.mid{background:rgba(160,112,74,.16);color:var(--earth)}
+.certs-row{display:grid;grid-template-columns:2fr 1fr;gap:.8rem;margin-top:.8rem}
+.cert-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.cert-title{font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:.65rem;display:flex;align-items:center;gap:.36rem}
+.cert-pills{display:flex;flex-wrap:wrap;gap:.38rem}
+.cert-pill{font-size:.68rem;padding:.22rem .58rem;border-radius:100px;background:rgba(107,144,112,.12);color:var(--sage-d);font-weight:500}
+.cert-pill.earth{background:rgba(160,112,74,.12);color:var(--earth)}
+.cert-pill.muted{background:var(--bg3);color:var(--ink2)}
+
+/* ── CODE ── */
+#code{padding:5.6rem 0;background:linear-gradient(180deg,var(--bg),var(--white) 32%,var(--bg2))}
+.code-intro{max-width:700px;margin:0 auto 2.1rem;text-align:center;font-size:.98rem;line-height:1.8;color:var(--ink2)}
+.code-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.code-card{position:relative;display:flex;flex-direction:column;min-height:320px;padding:1.35rem;border:1px solid var(--border);border-radius:20px;background:linear-gradient(180deg,rgba(255,253,248,.96),rgba(244,236,225,.96));box-shadow:var(--shadow-soft);overflow:hidden}
+.code-card::before{content:"";position:absolute;inset:auto -22% 68% 46%;height:150px;background:radial-gradient(circle,rgba(95,134,111,.18),transparent 70%);pointer-events:none}
+.code-card:nth-child(2)::before{background:radial-gradient(circle,rgba(200,135,51,.18),transparent 70%)}
+.code-card:nth-child(3)::before{background:radial-gradient(circle,rgba(159,107,67,.16),transparent 70%)}
+.code-top{display:flex;align-items:flex-start;justify-content:space-between;gap:.8rem;margin-bottom:1rem;position:relative;z-index:1}
+.code-index{font-family:var(--serif);font-size:2rem;line-height:1;color:var(--sage)}
+.code-badge{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:.3rem .72rem;background:rgba(95,134,111,.11);color:var(--sage-d);border:1px solid rgba(95,134,111,.2)}
+.code-title{position:relative;z-index:1;font-family:var(--serif);font-size:1.35rem;line-height:1.2;color:var(--ink);margin-bottom:.75rem}
+.workflow-thumb{position:relative;z-index:1;display:block;aspect-ratio:16/9;margin:0 0 1rem;border:1px solid rgba(95,134,111,.28);border-radius:18px;overflow:hidden;background:linear-gradient(145deg,#0f1c17,#172a22);box-shadow:0 16px 36px rgba(37,31,24,.13)}
+.workflow-thumb::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);pointer-events:none}
+.workflow-thumb img{display:block;width:100%;height:100%;object-fit:contain;padding:.35rem;transition:transform .28s ease,filter .28s ease}
+.workflow-thumb:hover img{transform:scale(1.018);filter:saturate(1.06) contrast(1.02)}
+.code-desc{position:relative;z-index:1;font-size:.9rem;line-height:1.75;color:var(--ink2);margin-bottom:1.15rem}
+.code-features{position:relative;z-index:1;list-style:none;display:flex;flex-direction:column;gap:.42rem;margin-bottom:1rem}
+.code-features li{position:relative;padding-left:.95rem;font-size:.82rem;line-height:1.65;color:var(--ink2)}
+.code-features li::before{content:"•";position:absolute;left:0;color:var(--sage)}
+.code-tech{position:relative;z-index:1;margin:.1rem 0 1rem;font-size:.78rem;line-height:1.7;color:var(--muted)}
+.code-meta{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:.45rem;margin-top:auto;padding-top:.4rem}
+.code-pill{font-size:.68rem;padding:.2rem .56rem;border-radius:999px;background:var(--white);border:1px solid var(--border);color:var(--muted)}
+.code-link{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;margin-top:1rem;padding:.8rem 1rem;border-radius:999px;text-decoration:none;background:var(--ink);color:var(--white);font-size:.86rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.code-link:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft);background:var(--sage)}
+.code-link.is-disabled{background:var(--bg3);color:var(--muted);pointer-events:none;box-shadow:none}
+#data .code-grid{align-items:start}
+#data .code-card{min-height:0;padding:1.2rem}
+#data .code-title{font-size:1.12rem;line-height:1.22;margin-bottom:.65rem}
+#data .code-index{font-size:1.75rem}
+#data .code-top{margin-bottom:.85rem}
+#data .code-desc{font-size:.86rem;line-height:1.68;margin-bottom:.85rem}
+#data .code-features{gap:.32rem;margin-bottom:.75rem}
+#data .code-features li{font-size:.78rem;line-height:1.55}
+#data .code-tech{font-size:.74rem;line-height:1.55;margin:.05rem 0 .8rem}
+#data .code-meta{margin-top:.25rem;padding-top:0}
+#data .code-pill{font-size:.64rem}
+#data .code-link{margin-top:.9rem;padding:.72rem .9rem}
+
+/* ── CONTACT ── */
+#contact{padding:6rem 0;background:var(--bg2)}
+.contact-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2.4rem;align-items:start}
+.contact-copy{max-width:540px}
+.contact-lead{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.14;color:var(--ink);margin-bottom:1rem;letter-spacing:-.02em}
+.contact-lead em{font-style:normal;color:inherit}
+.contact-sub{font-size:1.02rem;color:var(--ink2);line-height:1.74;font-weight:400;margin-bottom:1.6rem}
+.contact-links{display:flex;flex-direction:column;gap:.95rem}
+.contact-link{display:flex;align-items:center;gap:.9rem;text-decoration:none;color:var(--ink2);font-size:1rem;font-weight:500;padding:.62rem .75rem;border-radius:12px;border:1px solid transparent;transition:all .2s}
+.contact-link:hover{color:var(--sage-d);border-color:var(--border);background:var(--white)}
+.contact-icon{width:42px;height:42px;border-radius:12px;background:var(--white);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--ink2)}
+.contact-icon svg{width:18px;height:18px;display:block;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.cf{display:flex;flex-direction:column;gap:1rem;background:var(--white);border:1px solid var(--border);border-radius:14px;padding:1.1rem}
+.cf label{font-size:.76rem;font-weight:700;color:var(--ink2);letter-spacing:.08em;display:block;margin-bottom:.36rem;text-transform:uppercase}
+.cf input,.cf textarea{width:100%;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:.92rem 1rem;color:var(--ink);font-family:var(--sans);font-size:1.02rem;outline:none;transition:border-color .2s,box-shadow .2s;resize:none}
+.cf input::placeholder,.cf textarea::placeholder{color:var(--muted)}
+.cf input:focus,.cf textarea:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(107,144,112,.12)}
+.cf textarea{min-height:126px}
+.cf .btn-send{background:var(--ink);color:var(--white);border:none;padding:.9rem 2rem;border-radius:999px;font-family:var(--sans);font-weight:600;font-size:1rem;cursor:pointer;transition:background .2s,transform .15s;align-self:flex-start}
+.cf .btn-send:hover{background:var(--sage-d);transform:translateY(-1px)}
+.form-success{display:none;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.1rem;font-size:.95rem;color:var(--ink2)}
+
+/* ── PORTFOLIO BOT ── */
+.portfolio-bot{position:fixed;right:2.35rem;bottom:1.6rem;z-index:210;display:flex;flex-direction:column;align-items:flex-end;gap:.75rem}
+.bot-panel{width:min(360px,calc(100vw - 2rem));max-height:min(620px,calc(100vh - 5.5rem));display:none;flex-direction:column;background:var(--white);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow-strong);overflow:hidden}
+.bot-panel.open{display:flex}
+.bot-head{display:flex;align-items:center;gap:.8rem;padding:1rem 1rem .85rem;background:linear-gradient(135deg,rgba(95,134,111,.16),rgba(200,135,51,.11));border-bottom:1px solid var(--border)}
+.bot-face{position:relative;width:42px;height:42px;border-radius:16px;background:linear-gradient(145deg,#fdf8ef,#dfeada);border:1px solid rgba(95,134,111,.24);box-shadow:inset 0 -5px 12px rgba(95,134,111,.12)}
+.bot-face::before,.bot-face::after{content:"";position:absolute;top:17px;width:5px;height:5px;border-radius:50%;background:var(--sage-d)}
+.bot-face::before{left:12px}
+.bot-face::after{right:12px}
+.bot-mouth{position:absolute;left:50%;bottom:11px;width:12px;height:6px;border-bottom:2px solid var(--earth);border-radius:0 0 12px 12px;transform:translateX(-50%)}
+.bot-title{font-weight:800;color:var(--ink);font-size:.95rem;line-height:1.25}
+.bot-subtitle{font-size:.74rem;color:var(--muted);line-height:1.45;margin-top:.12rem}
+.bot-close{margin-left:auto;width:32px;height:32px;border:1px solid var(--border);border-radius:999px;background:var(--white);color:var(--muted);cursor:pointer;font-size:1.1rem;line-height:1;transition:all .2s}
+.bot-close:hover{border-color:var(--sage);color:var(--sage-d)}
+.bot-messages{display:flex;flex-direction:column;gap:.65rem;min-height:190px;max-height:330px;overflow:auto;padding:1rem;background:rgba(250,248,244,.72)}
+.bot-msg{max-width:88%;padding:.72rem .84rem;border-radius:16px;font-size:.86rem;line-height:1.65;white-space:pre-line}
+.bot-msg.bot{align-self:flex-start;background:var(--white);border:1px solid var(--border);color:var(--ink2);border-bottom-left-radius:6px}
+.bot-msg.user{align-self:flex-end;background:var(--sage-d);color:var(--white);border-bottom-right-radius:6px}
+.bot-quick{display:flex;flex-wrap:wrap;gap:.45rem;padding:0 1rem 1rem;background:rgba(250,248,244,.72)}
+.bot-chip{border:1px solid rgba(95,134,111,.26);background:var(--white);color:var(--sage-d);border-radius:999px;padding:.42rem .68rem;font-size:.75rem;font-weight:700;cursor:pointer;transition:all .2s}
+.bot-chip:hover{background:rgba(95,134,111,.1);transform:translateY(-1px)}
+.bot-form{display:flex;gap:.55rem;padding:.85rem;border-top:1px solid var(--border);background:var(--white)}
+.bot-input{flex:1;min-width:0;border:1px solid var(--border);border-radius:999px;background:var(--white);color:var(--ink);font:inherit;font-size:.88rem;padding:.72rem .9rem;outline:none}
+.bot-input:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(107,144,112,.12)}
+.bot-send{border:none;border-radius:999px;background:var(--ink);color:var(--white);font-weight:800;font-size:.82rem;padding:0 .95rem;cursor:pointer;transition:background .2s,transform .15s}
+.bot-send:hover{background:var(--sage-d);transform:translateY(-1px)}
+.bot-toggle{display:flex;align-items:center;gap:.6rem;max-width:calc(100vw - 4.7rem);border:none;border-radius:999px;background:var(--ink);color:var(--white);box-shadow:var(--shadow-strong);padding:.68rem .95rem .68rem .72rem;cursor:pointer;transition:transform .2s,background .2s}
+.bot-toggle:hover{transform:translateY(-2px);background:var(--sage-d)}
+.bot-toggle .bot-face{width:34px;height:34px;border-radius:13px}
+.bot-toggle .bot-face::before,.bot-toggle .bot-face::after{top:14px}
+.bot-toggle .bot-face::before{left:10px}
+.bot-toggle .bot-face::after{right:10px}
+.bot-toggle .bot-mouth{bottom:9px}
+.bot-toggle-text{font-size:.86rem;font-weight:800;letter-spacing:.01em}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:var(--white);padding:1.5rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.foot-logo{font-family:var(--serif);font-size:.95rem;font-weight:700;color:rgba(255,255,255,.7)}
+.foot-copy{font-size:.75rem;color:rgba(255,255,255,.3)}
+.foot-back{font-size:.75rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s}
+.foot-back:hover{color:rgba(255,255,255,.8)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  .section-wrap{padding:0 1.25rem}
+  .competition-category-rail{padding-bottom:.8rem}
+  .competition-category-chip{padding:.65rem .9rem}
+  .competition-card{flex-basis:min(82vw,320px)}
+  .carousel-arrow{display:none}
+
+  .nav-links{display:none}
+  #mobile-btn{display:flex}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .theme-toggle{margin-left:.45rem}
+  .lang-toggle{min-width:50px;padding:0 .65rem}
+  .hero-layout{grid-template-columns:1fr;gap:1.2rem}
+  .hero-avatar-wrap{justify-self:center;order:-1}
+  .about-grid{grid-template-columns:1fr}
+  .about-card{position:static}
+    .awards-grid{grid-template-columns:1fr}
+  .award-card.span2{grid-column:span 1}
+  .code-grid{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .certs-row{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
+  .leadership-grid{grid-template-columns:1fr}
+  .community-grid{grid-template-columns:1fr}
+  .portfolio-bot{right:1rem;bottom:1rem}
+  .bot-panel{width:calc(100vw - 2rem)}
+  .bot-toggle-text{display:none}
+}
+@media(min-width:769px) and (max-width:1180px){
+  .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+  .competition-card{height:420px;flex-basis:82vw}
+
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+}
+
+/* ===== Visual Direction: Warm Editorial ===== */
+:root{
+  --bg:#f7f3eb;
+  --bg2:#efe7da;
+  --bg3:#e7dccb;
+  --white:#fffdf8;
+  --sand:#d8c8ad;
+  --sage:#5f866f;
+  --sage-d:#3f5f4f;
+  --earth:#9f6b43;
+  --amber:#c88733;
+  --ink:#1f1a14;
+  --ink2:#4d4436;
+  --muted:#7e7465;
+  --border:rgba(138,105,67,0.2);
+  --serif:'Fraunces','Noto Serif TC',serif;
+  --sans:'Noto Sans TC',sans-serif;
+  --shadow-soft:0 12px 36px rgba(53,38,23,.08);
+  --shadow-strong:0 18px 45px rgba(53,38,23,.14);
+}
+html.dark{
+  --bg:#1d1812;
+  --bg2:#272018;
+  --bg3:#31271d;
+  --white:#2d241b;
+  --sand:#6b5844;
+  --sage:#8fb69a;
+  --sage-d:#d3ead9;
+  --earth:#d19a69;
+  --amber:#e6b36d;
+  --ink:#f8f1e7;
+  --ink2:#ddd2c0;
+  --muted:#af9f8d;
+  --border:rgba(230,196,151,.22);
+}
+body{
+  font-family:var(--sans);
+  background:
+    radial-gradient(1200px 580px at 92% -12%,rgba(95,134,111,.16),transparent 62%),
+    radial-gradient(900px 520px at -10% 110%,rgba(200,135,51,.12),transparent 62%),
+    linear-gradient(180deg,var(--bg),#f4eee3 38%,var(--bg) 100%);
+  color:var(--ink2);
+  letter-spacing:.005em;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background-image:
+    linear-gradient(rgba(159,107,67,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(159,107,67,.03) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:radial-gradient(circle at 20% 15%,black 20%,transparent 86%);
+}
+.section-wrap{max-width:1140px}
+.sec-title{
+  font-family:var(--serif);
+  color:var(--ink);
+  font-size:clamp(2rem,3.6vw,2.8rem);
+  line-height:1.16;
+}
+.sec-rule{
+  width:62px;
+  height:3px;
+  border-radius:99px;
+  background:linear-gradient(90deg,var(--sage),rgba(95,134,111,.2));
+}
+nav{
+  border-bottom:1px solid var(--border);
+  box-shadow:0 1px 0 rgba(255,255,255,.55) inset;
+}
+.nav-logo{font-family:var(--serif)}
+.nav-links a{font-weight:500}
+#hero{
+  padding-top:7rem;
+  position:relative;
+}
+#hero::after{
+  display:none;
+}
+.hero-layout{
+  grid-template-columns:minmax(0,1fr) minmax(260px,360px);
+  gap:2.4rem;
+  align-items:end;
+}
+.hero-name{
+  font-size:clamp(2.75rem,6vw,4.9rem);
+  line-height:1.02;
+  letter-spacing:-.015em;
+  margin-bottom:.8rem;
+}
+.hero-tagline{
+  font-family:var(--sans);
+  font-size:clamp(1.02rem,1.75vw,1.26rem);
+  color:var(--sage-d);
+  font-weight:700;
+  letter-spacing:.02em;
+  margin-bottom:1.05rem;
+}
+.hero-desc{
+  color:var(--ink2);
+  max-width:58ch;
+  font-size:1.05rem;
+  line-height:1.75;
+  text-wrap:pretty;
+  margin-bottom:1.85rem;
+}
+.hero-avatar-wrap{
+  border-radius:22px;
+  width:min(100%,340px);
+  height:430px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-strong);
+  transform:none;
+  justify-self:center;
+  overflow:hidden;
+  background:linear-gradient(180deg,var(--bg3),var(--white));
+}
+.hero-avatar-wrap::before{
+  display:none;
+}
+#hero-avatar{
+  object-fit:cover;
+  object-position:50% 24%;
+}
+.hero-stats{
+  margin-top:.5rem;
+  box-shadow:var(--shadow-soft);
+}
+.hstat{
+  min-height:120px;
+  display:grid;
+  place-content:center;
+}
+.hstat-n{font-size:2rem}
+#about,#skills,#projects,#contact,#communities,#education{
+  position:relative;
+}
+#about::before,#skills::before,#contact::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:-70px;
+  height:120px;
+  background:linear-gradient(180deg,transparent,rgba(255,253,248,.4));
+  pointer-events:none;
+}
+.about-grid{gap:4.5rem;align-items:start}
+.about-card{
+  border-radius:20px;
+  box-shadow:var(--shadow-soft);
+  transform:translateY(22px);
+}
+.about-prose p{
+  font-size:1.02rem;
+  color:var(--ink2);
+  max-width:62ch;
+}
+.about-features .afeature{
+  background:linear-gradient(180deg,var(--white),var(--bg));
+  box-shadow:0 8px 22px rgba(53,38,23,.05);
+}
+#experience{
+  background:linear-gradient(180deg,var(--bg),var(--bg2) 26%,var(--bg));
+}
+.sub-arc{
+  color:var(--sage-d);
+  font-weight:600;
+  letter-spacing:.12em;
+}
+.tl-list::before{
+  background:linear-gradient(var(--sage),rgba(95,134,111,.15));
+  width:2px;
+}
+.tl-item{
+  border-radius:16px;
+  box-shadow:var(--shadow-soft);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.tl-item:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-strong);
+  border-color:rgba(95,134,111,.35);
+}
+.tl-role{
+  font-family:var(--serif);
+  font-size:1.08rem;
+}
+.tl-list-items li{line-height:1.72}
+.tl-list-items li::before{color:var(--sage)}
+#projects{
+  background:
+    linear-gradient(160deg,rgba(255,253,248,.88),rgba(244,236,225,.9)),
+    var(--white);
+}
+#projects .section-wrap{max-width:1220px}
+.competition-shell{
+  margin-inline:-1.1rem;
+  padding-inline:1.1rem;
+}
+.competition-card{
+  border-radius:16px;
+  box-shadow:var(--shadow-soft);
+}
+.competition-card:hover,.competition-card:focus-visible{
+  box-shadow:var(--shadow-strong);
+}
+.competition-body{
+  padding:1rem 1.1rem 1.15rem;
+}
+.competition-title{line-height:1.35}
+.carousel-arrow{
+  box-shadow:var(--shadow-soft);
+}
+#communities{
+  background:linear-gradient(180deg,var(--white),var(--bg2) 55%,var(--white));
+}
+.community-grid .mini-card{
+  box-shadow:var(--shadow-soft);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.community-grid .mini-card:nth-child(even){
+  transform:translateY(16px);
+}
+.community-grid .mini-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-strong);
+}
+#education .edu-card{
+  box-shadow:var(--shadow-soft);
+  border-radius:18px;
+}
+#skills{
+  background:linear-gradient(180deg,var(--white),var(--bg) 38%,var(--white));
+}
+.skills-grid{
+  gap:1rem;
+}
+.skillcard{
+  border-radius:16px;
+  box-shadow:var(--shadow-soft);
+}
+.skillcard:nth-child(2),.skillcard:nth-child(4){
+  transform:translateY(12px);
+}
+.skillcard:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-strong);
+}
+.skill-cat{
+  font-family:var(--serif);
+  font-size:1.1rem;
+}
+.skill-item{
+  min-height:56px;
+}
+#contact{
+  background:
+    linear-gradient(130deg,rgba(95,134,111,.11),transparent 38%),
+    linear-gradient(180deg,var(--bg2),var(--bg));
+}
+.contact-inner{
+  gap:2.8rem;
+}
+.cf,.contact-link,.contact-icon{
+  box-shadow:var(--shadow-soft);
+}
+.contact-lead{
+  font-family:var(--serif);
+  letter-spacing:.01em;
+}
+.contact-lead em{font-family:var(--serif)}
+.btn-fill,.btn-ghost,.btn-send{
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+}
+.btn-fill:hover,.btn-ghost:hover,.btn-send:hover{
+  box-shadow:0 10px 20px rgba(53,38,23,.16);
+}
+footer{
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.reveal{
+  opacity:0;
+  transform:translateY(26px) scale(.985);
+  filter:blur(4px);
+  transition:
+    opacity .72s ease,
+    transform .72s cubic-bezier(.2,.7,.2,1),
+    filter .72s ease;
+  transition-delay:var(--rv-delay,0ms);
+}
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  filter:blur(0);
+}
+@media(max-width:1024px){
+  .hero-layout{grid-template-columns:1fr 280px}
+  #hero::after{display:none}
+  .community-grid .mini-card:nth-child(even),
+  .skillcard:nth-child(2),
+  .skillcard:nth-child(4){
+    transform:none;
+  }
+}
+@media(max-width:768px){
+  body::before{display:none}
+  #hero{padding-top:6.4rem}
+  #hero::after{display:none}
+  .hero-layout{grid-template-columns:1fr;gap:1.2rem}
+  .hero-avatar-wrap{
+    width:min(84vw,330px);
+    height:min(112vw,420px);
+    justify-self:center;
+    transform:none;
+    order:-1;
+  }
+  .hero-btns{margin-bottom:2.1rem}
+  .competition-shell{margin-inline:0;padding-inline:0}
+  .skillcard:nth-child(2),.skillcard:nth-child(4){transform:none}
+}
+</style>
+</head>
+<body>
+<div id="reading-progress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Dora Yu</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#communities">Communities</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#n8n">n8n</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch language">中</button>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+  <button id="mobile-btn" aria-label="Menu">
+    <span id="b1"></span><span id="b2"></span><span id="b3"></span>
+  </button>
+</nav>
+<div id="mobile-menu">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#communities">Communities</a>
+  <a href="#code">Code</a>
+  <a href="#n8n">n8n</a>
+  <a href="#data">Data</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-layout">
+      <div>
+        <p class="hero-eyebrow">YU, HSIN-HUA · Portfolio 2026</p>
+        <h1 class="hero-name"><span class="lang-en">Dora Yu</span><span class="lang-zh">游欣樺 Dora Yu</span></h1>
+        <p class="hero-tagline">
+          <span class="lang-en">Finance | Product | Organizational Development</span>
+          <span class="lang-zh">財務｜產品｜組織發展</span>
+        </p>
+        <p class="hero-desc">
+          <strong id="hero-lead">Designing better systems for people to learn, work, and grow.</strong><br>
+          <span id="hero-intro">I build practical systems with AI workflows, automation, and product thinking across finance, operations, and organizational development.</span>
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-fill"><span class="lang-en">View Projects →</span><span class="lang-zh">瀏覽專案 →</span></a>
+          <a href="#contact" class="btn-ghost"><span class="lang-en">Contact Me</span><span class="lang-zh">與我聯繫</span></a>
+        </div>
+      </div>
+      <div class="hero-avatar-wrap">
+        <img id="hero-avatar" src="assets/images/hero-avatar.jpg" alt="Dora Yu portrait"/>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">3.80</span><span class="hstat-l">GPA 3.80 / 4.0 · Top 4 in Class</span></div>
+      <div class="hstat"><span class="hstat-n">14</span><span class="hstat-l">Professional Certifications</span></div>
+      <div class="hstat"><span class="hstat-n">50+</span><span class="hstat-l">Business Competitions</span></div>
+      <div class="hstat"><span class="hstat-n">1,000+</span><span class="hstat-l">Financial Records Managed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid reveal">
+      <div class="about-card">
+        <div class="about-avatar"><img src="assets/images/hero-avatar.jpg" alt="Dora Yu profile photo"></div>
+        <div class="about-name">Dora Yu (Hsin-Hua Yu)</div>
+        <div class="about-sub">Finance × Product × Organizational Development</div>
+        <div class="about-meta">
+          <div class="about-meta-row"><span class="about-meta-icon">📍</span><span>Taipei, Taiwan</span></div>
+          <div class="about-meta-row"><span class="about-meta-icon">🎓</span><span>National Taipei University of Business, Finance</span></div>
+          <div class="about-meta-row"><span class="about-meta-icon">📅</span><span>Expected Graduation: June 2026</span></div>
+          <div class="about-meta-row"><span class="about-meta-icon">📧</span><a href="mailto:doratwotw@gmail.com" style="color:var(--sage);text-decoration:none">doratwotw@gmail.com</a></div>
+          <div class="about-meta-row"><span class="about-meta-icon">📞</span><span>0970-513-917</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="sec-eyebrow">About Me</p>
+        <h2 class="sec-title">About</h2>
+        <div class="sec-rule"></div>
+        <div class="about-prose">
+          <p>My work centers on the intersection of finance, organization, and product.</p>
+          <p>I care about how analytical thinking and organizational understanding support better decisions, stronger systems, and higher-quality execution.</p>
+          <p>Starting from a finance background, I continue to explore HR, product work, and digital practice. Over time, I have built a cross-disciplinary approach that combines business analysis, process design, generative AI, and workflow automation to turn ideas into practical solutions.</p>
+        </div>
+        <div class="about-features">
+          <div class="afeature"><div class="afeature-icon">🌱</div><h4>Sustainability Mindset</h4><p>Certified in ESG fundamentals and experienced in carbon-policy research.</p></div>
+          <div class="afeature"><div class="afeature-icon">📊</div><h4>Data-Driven Execution</h4><p>Python, Power BI, and analytics methods to turn insights into decisions.</p></div>
+          <div class="afeature"><div class="afeature-icon">🤖</div><h4>AI & Automation</h4><p>Use generative AI, workflow automation, and RPA thinking to redesign repetitive work into clearer systems.</p></div>
+          <div class="afeature"><div class="afeature-icon">🎤</div><h4>Facilitation & Training</h4><p>Hands-on training facilitation and internal workshop design experience.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2.8rem">
+      <p class="sec-eyebrow" style="text-align:center">Experience</p>
+      <h2 class="sec-title">Work Experience</h2>
+      <div class="sec-rule" style="margin:0 auto 0"></div>
+    </div>
+    <div class="reveal">
+      <p class="sub-arc">Finance → Operations → Product → Organizational Development</p>
+      <div class="tl-list">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Organizational Development Associate</span><span class="tl-badge">2026.04 — Present</span></div>
+          <div class="tl-org">Chandin Electrical Engineering Co., Ltd. · Taipei</div>
+          <ul class="tl-list-items">
+            <li>Partnered directly with the CEO to drive company-level project management and cross-functional execution.</li>
+            <li>Led corporate learning initiatives, delivering <strong>10+</strong> internal training sessions.</li>
+            <li>Led DPA award application, group insurance planning, title framework, and organization design projects, while supporting Odoo ERP implementation and AI Studio-based documentation workflows.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Product Team Intern</span><span class="tl-badge">2026.03 — Present</span></div>
+          <div class="tl-org">IMAG Marketing · Taipei</div>
+          <ul class="tl-list-items">
+            <li>Designed QA coverage across <strong>9</strong> modules and <strong>50+</strong> test cases for Social War Room.</li>
+            <li>Owned bug tracking in Linear and led migration of issues from Asana.</li>
+            <li>Built a pipeline of <strong>60</strong> FriendPass leads to support growth and partnership development.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Human Resources Assistant</span><span class="tl-badge muted">2025.12 — 2026.04</span></div>
+          <div class="tl-org">Chandin Electrical Engineering Co., Ltd. · Taipei</div>
+          <ul class="tl-list-items">
+            <li>Conducted <strong>20+</strong> online interviews and observed <strong>50+</strong> interviews, contributing to a more structured interviewing process.</li>
+            <li>Revised <strong>10+</strong> internal policies and helped establish a standardized onboarding workflow.</li>
+            <li>Planned and facilitated <strong>4</strong> employee training sessions, including serving as lead presenter for one program.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Operations Intern</span><span class="tl-badge muted">2025.07 — 2025.12</span></div>
+          <div class="tl-org">IMAG Marketing · Taipei</div>
+          <ul class="tl-list-items">
+            <li>Contributed to HR tech and operations initiatives, including SOP optimization and workflow automation.</li>
+            <li>Supported technical talent sourcing and candidate screening, including backend engineering positions.</li>
+            <li>Streamlined administrative and recruiting processes to improve coordination and operational efficiency.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Finance Intern</span><span class="tl-badge muted">2025.01 — 2025.06</span></div>
+          <div class="tl-org">IMAG Marketing · Taipei</div>
+          <ul class="tl-list-items">
+            <li>Supported financial documentation and process digitization during IPO preparation.</li>
+            <li>Managed <strong>1,000+</strong> payment records and contributed to improving traceability and workflow efficiency.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Director of Finance</span><span class="tl-badge muted">2024.05 — 2025.06</span></div>
+          <div class="tl-org">20th Student Association of Department of Finance, NTUB</div>
+          <ul class="tl-list-items">
+            <li>Managed a semester budget of NT$<strong>100,000+</strong> and completed monthly reconciliations.</li>
+            <li>Led annual budget planning and cross-team resource allocation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITIES -->
+<section id="communities">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <p class="sec-eyebrow" style="text-align:center">Leadership & Communities</p>
+      <h2 class="sec-title">Leadership & Communities</h2>
+      <div class="sec-rule" style="margin:0 auto 0"></div>
+    </div>
+    <div class="reveal community-grid">
+      <article class="mini-card">
+        <h3>HR Learning Fellow</h3>
+        <div class="mini-meta">HR Weekend Community / Social Enterprise · 2026.02 — Present</div>
+        <ul class="mini-list">
+          <li>Participated in HR-focused learning and career exchange sessions.</li>
+          <li>Applied insights to resume refinement and interview preparation.</li>
+        </ul>
+      </article>
+      <article class="mini-card">
+        <h3>Product Management Cohort Member</h3>
+        <div class="mini-meta">XChange · 2026.04 — Present</div>
+        <ul class="mini-list">
+          <li>Joined PM discussions and case learning to strengthen product thinking.</li>
+          <li>Collaborated with cross-functional peers on problem framing and execution.</li>
+        </ul>
+      </article>
+      <article class="mini-card">
+        <h3>Human Resources Team Member</h3>
+        <div class="mini-meta">Cheese Presentation Education Association · 2025.08 — Present</div>
+        <ul class="mini-list">
+          <li>Coordinated cross-functional communication and progress tracking to support team execution.</li>
+          <li>Supported HR administration, resource planning, and process documentation.</li>
+        </ul>
+      </article>
+      <article class="mini-card">
+        <h3>Finance Team Member</h3>
+        <div class="mini-meta">Cheese Presentation Education Association · 2024.07 — 2025.08</div>
+        <ul class="mini-list">
+          <li>Managed receipts and expense records for major events, covering NT$200,000+ in transactions.</li>
+          <li>Supported financial documentation and coordination with external accounting partners.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <p class="sec-eyebrow" style="text-align:center">Projects</p>
+      <h2 class="sec-title">Projects</h2>
+      <div class="sec-rule" style="margin:0 auto 0"></div>
+    </div>
+    <div class="reveal competition-shell" data-carousel-root>
+      <div class="competition-filters" aria-label="Project category filters">
+        <button class="competition-filter active" data-filter="all">All</button>
+        <button class="competition-filter" data-filter="uiux">UI/UX</button>
+        <button class="competition-filter" data-filter="FinTech">FinTech</button>
+        <button class="competition-filter" data-filter="創業競賽">Entrepreneurship</button>
+        <button class="competition-filter" data-filter="AI">AI</button>
+        <button class="competition-filter" data-filter="法律">Legal</button>
+        <button class="competition-filter" data-filter="永續">Sustainability</button>
+        <button class="competition-filter" data-filter="HR">HR</button>
+        <button class="competition-filter" data-filter="培訓">Training</button>
+        <button class="competition-filter" data-filter="其他">Other</button>
+      </div>
+      <div class="competition-category-rail" aria-label="Project category guide"></div>
+      <div class="carousel-wrap">
+        <button class="carousel-arrow prev" type="button" aria-label="Previous">‹</button>
+        <div class="competition-carousel" tabindex="0" aria-label="Project carousel"></div>
+        <button class="carousel-arrow next" type="button" aria-label="Next">›</button>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dots" aria-label="Carousel position"></div>
+        <button class="carousel-toggle" type="button" aria-pressed="false">Pause</button>
+      </div>
+      <div class="competition-groups" aria-label="Project grouped list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CODE -->
+<section id="code">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <p class="sec-eyebrow">Code</p>
+      <h2 class="sec-title">Code</h2>
+      <div class="sec-rule" style="margin:0 auto .9rem"></div>
+      <p class="code-intro" id="code-intro">Live builds from finance, product, and operations problems I have worked on. I care about whether the flow can be used, tracked, and handed off, not only whether the screen looks complete.</p>
+    </div>
+    <div class="reveal code-grid">
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">01</span>
+          <span class="code-badge">Base44</span>
+        </div>
+        <h3 class="code-title">Finance Peace Academy</h3>
+        <p class="code-desc">A finance-learning web app built around making money topics feel more approachable. The project focuses on turning financial knowledge into a clearer and more accessible learning experience.</p>
+        <ul class="code-features">
+          <li>Finance-learning positioning with a clear educational focus</li>
+          <li>Built and published as a standalone web app</li>
+          <li>Designed as an accessible entry point for financial learning</li>
+        </ul>
+        <p class="code-tech">Tech: Base44, React, Supabase Storage, PWA</p>
+        <div class="code-meta">
+          <span class="code-pill">Financial Education</span>
+          <span class="code-pill">Web App</span>
+        </div>
+        <a class="code-link" href="https://app-5dc91f86.base44.app/" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">02</span>
+          <span class="code-badge">AI Studio</span>
+        </div>
+        <h3 class="code-title">SROI Calculator</h3>
+        <p class="code-desc">An AI Studio app that breaks SROI calculation into a clearer interaction flow, so users can start estimating social impact without reading a full methodology first.</p>
+        <ul class="code-features">
+          <li>Built and hosted through Google AI Studio</li>
+          <li>Focused on SROI-related calculation and application flow</li>
+        </ul>
+        <p class="code-tech">Tech: Google AI Studio, SPA, Service Worker</p>
+        <div class="code-meta">
+          <span class="code-pill">Google AI Studio</span>
+          <span class="code-pill">SROI Tool</span>
+        </div>
+        <a class="code-link" href="https://ai.studio/apps/a6628e67-51bb-425c-9da8-4a4df37c2545?fullscreenApplet=true" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">03</span>
+          <span class="code-badge">Web App</span>
+        </div>
+        <h3 class="code-title">ZenBudget</h3>
+        <p class="code-desc">A zero-based budgeting tool that organizes personal finance into a clearer monthly workflow. From account overview to budget allocation and quick expense entry, the product is designed around everyday money management.</p>
+        <ul class="code-features">
+          <li>Account overview with cash, bank, and credit balances</li>
+          <li>`Ready to Assign` budgeting flow and category-based allocation</li>
+          <li>Quick expense entry, records, shared tab, and settings navigation</li>
+        </ul>
+        <p class="code-tech">Tech: React, Express, Google Cloud Run</p>
+        <div class="code-meta">
+          <span class="code-pill">Finance</span>
+          <span class="code-pill">Zero-Based Budgeting</span>
+        </div>
+        <a class="code-link" href="https://zenbudget-zero-based-finance-204328359214.asia-east1.run.app" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">04</span>
+          <span class="code-badge">Vercel</span>
+        </div>
+        <h3 class="code-title">Portfolio 投資決策平台</h3>
+        <p class="code-desc">A personal finance platform where market data, watchlists, K-line charts, backtesting, and portfolio analysis sit in the same workflow, reducing the need to jump between tools while reviewing investments.</p>
+        <ul class="code-features">
+          <li>Market overview, auto-updating quotes, and watchlist tracking in one workflow</li>
+          <li>Integrated TW and US asset tracking with K-line charts and stock-level views</li>
+          <li>Backtesting, portfolio analysis, risk observation, and budget-based buy planning</li>
+        </ul>
+        <p class="code-tech">Tech: Next.js, React, Tailwind CSS, Vercel</p>
+        <div class="code-meta">
+          <span class="code-pill">FinTech</span>
+          <span class="code-pill">Portfolio Analytics</span>
+        </div>
+        <a class="code-link" href="https://fin-neon.vercel.app/portfolio" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">05</span>
+          <span class="code-badge">War Room</span>
+        </div>
+        <h3 class="code-title">戰勤營運管理平台</h3>
+        <p class="code-desc">Scattered forms, updates, and department workflows were reorganized into one internal operations entry point, so the team can check progress, owners, and collaboration status from the same place.</p>
+        <ul class="code-features">
+          <li>Used for real cross-functional operations, with company KPI overview, key tasks, and timeline-based progress tracking</li>
+          <li>Supports ongoing project management, vendor records, communication logs, and follow-up items in one interface</li>
+          <li>Extends into HR recruiting, training management, and daily coordination instead of staying as a static dashboard</li>
+        </ul>
+        <p class="code-tech">Tech: HTML, CSS, JavaScript, SheetJS, GitHub Pages</p>
+        <div class="code-meta">
+          <span class="code-pill">Internal Tools</span>
+          <span class="code-pill">Operations</span>
+        </div>
+        <a class="code-link" href="https://beartwotw9-dot.github.io/warroom/" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- N8N -->
+<section id="n8n">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <p class="sec-eyebrow">n8n</p>
+      <h2 class="sec-title">n8n Workflows</h2>
+      <div class="sec-rule" style="margin:0 auto .9rem"></div>
+      <p class="code-intro" id="n8n-intro">A dedicated view of internal workflows I build with n8n, focused on reducing repetitive work and turning everyday inputs into trackable outputs.</p>
+    </div>
+    <div class="reveal code-grid">
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">01</span>
+          <span class="code-badge">n8n</span>
+        </div>
+        <h3 class="code-title">Meeting Transcript Automation System</h3>
+        <a class="workflow-thumb" href="assets/images/n8n-meeting-automation-sanitized.svg" aria-label="View Meeting Transcript Automation workflow evidence">
+          <img src="assets/images/n8n-meeting-automation-sanitized.svg" alt="Meeting transcript automation workflow evidence">
+        </a>
+        <p class="code-desc">After a meeting recording is uploaded, the workflow transcribes it, structures the notes, extracts follow-up items, and sends the result to Drive, Sheets, and the team chat.</p>
+        <ul class="code-features">
+          <li>Colleagues can submit department, date, meeting name, and audio file through an n8n form as part of the meeting workflow</li>
+          <li>faster-whisper and Gemini 2.5 Flash handle transcription, cleanup, and structured meeting-note generation with minimal manual intervention</li>
+          <li>Outputs are routed into Google Drive, Sheets, and department Chat spaces, with error notification flow for day-to-day reliability</li>
+        </ul>
+        <p class="code-tech">Tech: n8n, faster-whisper, Gemini 2.5 Flash, Google Workspace, Tailscale Funnel, launchd</p>
+        <div class="code-meta">
+          <span class="code-pill">AI Automation</span>
+          <span class="code-pill">Meeting Workflow</span>
+        </div>
+        <a class="code-link" href="assets/images/n8n-meeting-automation-sanitized.svg">View Workflow Evidence ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">02</span>
+          <span class="code-badge">n8n</span>
+        </div>
+        <h3 class="code-title">Invoice OCR Classification & Filing System</h3>
+        <a class="workflow-thumb" href="assets/images/n8n-invoice-ocr-sanitized.svg" aria-label="View Invoice OCR workflow evidence">
+          <img src="assets/images/n8n-invoice-ocr-sanitized.svg" alt="Invoice OCR classification and filing workflow evidence">
+        </a>
+        <p class="code-desc">Receipt images go through compression, OCR, field extraction, file naming, Drive archiving, and ledger routing, turning a repetitive finance task into a more traceable workflow.</p>
+        <ul class="code-features">
+          <li>Staff can submit receipt or invoice images through a form as part of the reimbursement and filing workflow</li>
+          <li>The flow handles image compression, OCR, field extraction, file naming, and Drive upload before the record is finalized</li>
+          <li>Category-based routing sends each record into the correct ledger sheet so finance tracking stays structured and searchable</li>
+        </ul>
+        <p class="code-tech">Tech: n8n, OCR.space, Google Drive, Google Sheets, image compression workflow</p>
+        <div class="code-meta">
+          <span class="code-pill">Finance Automation</span>
+          <span class="code-pill">OCR</span>
+        </div>
+        <a class="code-link" href="assets/images/n8n-invoice-ocr-sanitized.svg">View Workflow Evidence ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">03</span>
+          <span class="code-badge">n8n</span>
+        </div>
+        <h3 class="code-title">LINE Bot AI Reply Workflow</h3>
+        <a class="workflow-thumb" href="assets/images/n8n-line-bot-sanitized.svg" aria-label="View LINE Bot AI reply workflow evidence">
+          <img src="assets/images/n8n-line-bot-sanitized.svg" alt="LINE Bot AI reply workflow evidence">
+        </a>
+        <p class="code-desc">LINE works as the entry point: messages go into n8n, pass through an AI Agent and OpenAI Chat Model, then return to the chat window through the LINE Reply API.</p>
+        <ul class="code-features">
+          <li>LINE Webhook receives user messages and passes them into n8n</li>
+          <li>AI Agent uses an OpenAI Chat Model to generate structured replies</li>
+          <li>HTTP Request sends the response back through the LINE Reply API</li>
+        </ul>
+        <p class="code-tech">Tech: n8n, LINE Messaging API, Webhook, OpenAI Chat Model, HTTP Request</p>
+        <div class="code-meta">
+          <span class="code-pill">LINE Bot</span>
+          <span class="code-pill">AI Reply Flow</span>
+        </div>
+        <a class="code-link" href="assets/images/n8n-line-bot-sanitized.svg">View Workflow Evidence ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section id="data">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2rem">
+      <p class="sec-eyebrow">Data</p>
+      <h2 class="sec-title">Data Visualization</h2>
+      <div class="sec-rule" style="margin:0 auto .9rem"></div>
+      <p class="code-intro" id="data-intro">A small collection of data visualization work where I use dashboards to turn raw information into clearer patterns and more readable insights.</p>
+    </div>
+    <div class="reveal code-grid">
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">01</span>
+          <span class="code-badge">Tableau</span>
+        </div>
+        <h3 class="code-title">PM2.5</h3>
+        <p class="code-desc">A Tableau dashboard for reviewing PM2.5 and air-quality data through interactive charts and regional comparisons.</p>
+        <ul class="code-features">
+          <li>PM2.5 與空氣品質資料視覺化</li>
+          <li>互動式 dashboard 呈現</li>
+        </ul>
+        <p class="code-tech">Tech: Tableau Public, dashboard design, data visualization</p>
+        <div class="code-meta">
+          <span class="code-pill">Data Visualization</span>
+          <span class="code-pill">Air Quality</span>
+        </div>
+        <a class="code-link" href="https://public.tableau.com/app/profile/hsin.hua.yu/viz/pm25_17095222446470/1_1" target="_blank" rel="noopener noreferrer">View Dashboard ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">02</span>
+          <span class="code-badge">Tableau</span>
+        </div>
+        <h3 class="code-title">學生族群對自動化點餐系統滿意度與普及度的調查</h3>
+        <p class="code-desc">A survey dashboard that organizes student responses about automated ordering systems into adoption and satisfaction views.</p>
+        <ul class="code-features">
+          <li>學生族群問卷結果整理</li>
+          <li>聚焦自動化點餐系統的普及度與滿意度</li>
+        </ul>
+        <p class="code-tech">Tech: Tableau Public, dashboard design, interactive visualization</p>
+        <div class="code-meta">
+          <span class="code-pill">Data Visualization</span>
+          <span class="code-pill">Interactive Dashboard</span>
+        </div>
+        <a class="code-link" href="https://public.tableau.com/app/profile/hsin.hua.yu/viz/1_17359904183130/1_1" target="_blank" rel="noopener noreferrer">View Dashboard ↗</a>
+      </article>
+      <article class="code-card">
+        <div class="code-top">
+          <span class="code-index">03</span>
+          <span class="code-badge">Tableau</span>
+        </div>
+        <h3 class="code-title">Electronic Payments</h3>
+        <p class="code-desc">A Tableau dashboard for scanning electronic-payment data and comparing trend changes across key views.</p>
+        <ul class="code-features">
+          <li>電子支付相關資料整理</li>
+          <li>以 dashboard 方式呈現比較與趨勢</li>
+        </ul>
+        <p class="code-tech">Tech: Tableau Public, dashboard design, interactive visualization</p>
+        <div class="code-meta">
+          <span class="code-pill">Data Visualization</span>
+          <span class="code-pill">Dashboard Practice</span>
+        </div>
+        <a class="code-link" href="https://public.tableau.com/app/profile/hsin.hua.yu/viz/_17178678899480/1" target="_blank" rel="noopener noreferrer">View Dashboard ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:2.8rem">
+      <p class="sec-eyebrow" style="text-align:center">Skills</p>
+      <h2 class="sec-title">Skills & Tools</h2>
+      <div class="sec-rule" style="margin:0 auto 0"></div>
+    </div>
+    <div class="reveal skills-grid">
+      <div class="skillcard">
+        <div class="skill-head"><div class="skill-icon">📊</div><div class="skill-cat">Data Analysis</div></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Python (pandas, sklearn)</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Power BI</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">R</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Excel / SQL</span></span></li>
+        </ul>
+      </div>
+      <div class="skillcard">
+        <div class="skill-head"><div class="skill-icon">🤖</div><div class="skill-cat">AI Applications</div></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">ChatGPT / Claude</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Gemini / Google AI Studio</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Perplexity / NotebookLM</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Generative AI × Workflow Automation × RPA</span></span></li>
+        </ul>
+      </div>
+      <div class="skillcard">
+        <div class="skill-head"><div class="skill-icon">🧠</div><div class="skill-cat">HR & Organizational Development</div></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Recruiting & SOP Design</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Training Design & Facilitation</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">ESG Policy Planning</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Group Facilitation & Active Listening</span></span></li>
+        </ul>
+      </div>
+      <div class="skillcard">
+        <div class="skill-head"><div class="skill-icon">📋</div><div class="skill-cat">Project Management</div></div>
+        <ul class="skill-list">
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Linear / Asana</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Notion</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">QA Test Planning</span></span></li>
+          <li class="skill-item"><span class="skill-main"><span class="skill-name">Proposal Writing</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="reveal certs-row">
+      <div class="cert-card">
+        <div class="cert-title">📜 Professional Certifications (14)</div>
+        <div class="cert-pills">
+          <span class="cert-pill">Senior Securities Specialist</span>
+          <span class="cert-pill">Securities Specialist</span>
+          <span class="cert-pill">Futures Specialist</span>
+          <span class="cert-pill">Investment Advisory Specialist</span>
+          <span class="cert-pill">Trust Specialist</span>
+          <span class="cert-pill">Bank Internal Control & Audit</span>
+          <span class="cert-pill">Financial Markets & Ethics</span>
+          <span class="cert-pill">Asset Securitization</span>
+          <span class="cert-pill">Life Insurance Specialist</span>
+          <span class="cert-pill">Property Insurance Specialist</span>
+          <span class="cert-pill">Debt Collection Compliance Certification</span>
+          <span class="cert-pill earth">ESG Sustainability Fundamentals</span>
+          <span class="cert-pill muted">Google Fundamentals of Digital Marketing</span>
+          <span class="cert-pill muted">Gemini Certified Faculty</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-title">🌐 Languages</div>
+        <div class="cert-pills">
+          <span class="cert-pill">Mandarin (Native)</span>
+          <span class="cert-pill earth">English (Intermediate)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="contact-inner reveal">
+      <div class="contact-copy">
+        <p class="sec-eyebrow">Contact</p>
+        <p class="contact-lead">If you’d like to connect,<br>let’s talk.</p>
+        <p class="contact-sub">I’m open to roles and collaborations in HR tech, organizational development, product management, and ESG.<br>Feel free to reach out anytime and I’ll reply as soon as possible.</p>
+        <div class="contact-links">
+          <a href="mailto:doratwotw@gmail.com" class="contact-link">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 7h18v10H3z"></path>
+                <path d="m4 8 8 6 8-6"></path>
+              </svg>
+            </div>
+            doratwotw@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/hsin-hua-yu-a5337a2b5" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 10v7"></path>
+                <path d="M7 7.5h.01"></path>
+                <path d="M12 17v-4a2.5 2.5 0 0 1 5 0v4"></path>
+                <path d="M12 10v7"></path>
+              </svg>
+            </div>
+            LinkedIn / Dora Yu
+          </a>
+        </div>
+      </div>
+      <form class="cf" id="contact-form" action="https://formspree.io/f/mwvayjzw" method="POST">
+        <div><label for="contact-name">Name</label><input id="contact-name" name="name" type="text" placeholder="Your name" required></div>
+        <div><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" placeholder="your@email.com" required></div>
+        <div><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="Hi, I'd love to connect..." required></textarea></div>
+        <button class="btn-send" type="submit">Send Message →</button>
+      </form>
+      <div class="form-success" id="form-success">Message sent. I’ll reply within 48 hours 🙌</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO BOT -->
+<div class="portfolio-bot" aria-live="polite">
+  <section class="bot-panel" id="portfolio-bot-panel" aria-label="Dora portfolio assistant">
+    <div class="bot-head">
+      <div class="bot-face" aria-hidden="true"><span class="bot-mouth"></span></div>
+      <div>
+        <div class="bot-title" id="bot-title">DoraBot 作品集小助手</div>
+        <div class="bot-subtitle" id="bot-subtitle">只回答這個網站裡的內容</div>
+      </div>
+      <button class="bot-close" id="bot-close" type="button" aria-label="關閉作品集小助手">×</button>
+    </div>
+    <div class="bot-messages" id="bot-messages"></div>
+    <div class="bot-quick" id="bot-quick">
+      <button class="bot-chip" type="button" data-question="請介紹 Dora">介紹 Dora</button>
+      <button class="bot-chip" type="button" data-question="有哪些 n8n 作品">n8n 作品</button>
+      <button class="bot-chip" type="button" data-question="有哪些 AI 自動化能力">AI 自動化能力</button>
+      <button class="bot-chip" type="button" data-question="怎麼聯絡 Dora">聯絡方式</button>
+    </div>
+    <form class="bot-form" id="bot-form">
+      <input class="bot-input" id="bot-input" type="text" autocomplete="off" placeholder="問我這個網站的內容..." aria-label="向作品集小助手提問">
+      <button class="bot-send" id="bot-send" type="submit">送出</button>
+    </form>
+  </section>
+  <button class="bot-toggle" id="bot-toggle" type="button" aria-expanded="false" aria-controls="portfolio-bot-panel">
+    <span class="bot-face" aria-hidden="true"><span class="bot-mouth"></span></span>
+    <span class="bot-toggle-text" id="bot-toggle-text">問作品集小助手</span>
+  </button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="foot-logo">Dora Yu · HSIN-HUA YU</span>
+  <span class="foot-copy">© <span id="year"></span> Dora Yu — Designing better systems for people to learn, work, and grow.</span>
+  <a href="#hero" class="foot-back">Back to Top ↑</a>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const rootEl=document.documentElement;
+const themeToggle=document.getElementById('theme-toggle');
+const langToggle=document.getElementById('lang-toggle');
+const savedTheme=localStorage.getItem('theme-preference');
+const savedLang=localStorage.getItem('lang-preference')||'zh';
+let currentLang='zh';
+let isDark=savedTheme==='dark';
+if(isDark)rootEl.classList.add('dark');
+function syncThemeIcon(){if(themeToggle)themeToggle.textContent=rootEl.classList.contains('dark')?'☀️':'🌙'}
+syncThemeIcon();
+
+const i18n={
+  zh:{
+    navLogo:'游欣樺',
+    nav:{about:'關於我',experience:'經歷',projects:'專案',communities:'組織與社群',code:'Code',n8n:'n8n',data:'數據',skills:'技能',contact:'聯絡我'},
+    heroEyebrow:'YU, HSIN-HUA · 作品集 2026',
+    heroLead:'為學習、工作與成長設計更好的系統。',
+    heroIntro:'我常在財務、營運與組織發展的問題裡，找可以用 AI workflow 和產品方法整理得更順的地方。',
+    stats:[
+      'GPA 3.80 / 4.0 · 系排前四',
+      '專業證照',
+      '商業競賽場次',
+      '財務紀錄筆數'
+    ],
+    about:{
+      eyebrow:'關於我',
+      title:'關於我',
+      name:'游欣樺 Dora Yu',
+      sub:'財務 × 產品 × 組織發展',
+      location:'台北，台灣',
+      school:'國立臺北商業大學・財務金融系',
+      grad:'預計 2026 年 6 月畢業',
+      prose:[
+        '工作與興趣主要在財務、組織與產品的交會。',
+        '關注分析思維與組織理解如何支持更好的決策、更強韌的系統，以及更有品質的執行。',
+        '從財務背景出發，我後來一路碰到 HR、產品工作和數位實作。現在比較擅長做的事，是把商業分析、流程設計、生成式 AI 和自動化工具接在一起，讓想法有機會變成真的能跑的流程。'
+      ],
+      features:[
+        {title:'永續思維',text:'具備 ESG 永續發展基礎能力，並有碳政策研究經驗。'},
+        {title:'數據驅動',text:'以 Python、Power BI 與分析方法將洞察轉為決策。'},
+        {title:'AI 與流程自動化',text:'熟悉生成式 AI、n8n 與流程自動化，習慣先拆流程，再判斷哪一段值得交給工具處理。'},
+        {title:'訓練引導',text:'具內訓規劃與主持經驗，能落地課程設計。'}
+      ]
+    },
+    experience:{
+      eyebrow:'工作經歷',
+      title:'工作經歷',
+      arc:'財務 → 營運 → 產品 → 組織發展',
+      roles:[
+        '組織發展專員',
+        '產品團隊實習生',
+        '人力資源助理',
+        '營運實習生',
+        '財務實習生',
+        '財務長'
+      ],
+      orgs:[
+        '成鼎電工業有限公司 · 台北',
+        'IMAG Marketing · 台北',
+        '成鼎電工業有限公司 · 台北',
+        'IMAG Marketing · 台北',
+        'IMAG Marketing · 台北',
+        '國立臺北商業大學財務金融系系學會'
+      ],
+      bullets:[
+        [
+          '與執行長直接協作，推動公司層級專案管理與跨部門任務落地。',
+          '擔任教育訓練總負責人，完成 <strong>10+</strong> 場內訓課程規劃與執行。',
+          '主導 DPA 獎項申請、團險規劃、職稱制度與組織架構設計等跨部門專案，並參與 Odoo ERP 系統導入與 AI Studio 撰寫應用。'
+        ],
+        [
+          '規劃 Social War Room QA 測試，涵蓋 <strong>9</strong> 大模組與 <strong>50+</strong> 測試案例，支援產品驗證流程。',
+          '負責 Linear Bug Issue 管理，並主導 Asana 至 Linear 任務遷移，提升執行透明度並保留協作脈絡。',
+          '建立 <strong>60</strong> 筆 FriendPass 潛在客戶名單，支援成長拓展與合作開發。'
+        ],
+        [
+          '獨立執行 <strong>20+</strong> 場線上面試，旁聽逾 <strong>50</strong> 場，協助建立結構化面試流程。',
+          '修訂 <strong>10+</strong> 份內部管理規章，並建立標準化入職流程。',
+          '規劃並主持 <strong>4</strong> 場員工教育訓練，其中 <strong>1</strong> 場擔任主講人。'
+        ],
+        [
+          '參與 HR Tech 與營運專案，包含 SOP 優化與流程自動化。',
+          '協助技術人才搜尋與候選人初步篩選，支援後端工程職缺招募。',
+          '優化招募行政與作業流程，提升跨部門協作與營運效率。'
+        ],
+        [
+          '協助 IPO 準備期間財務文件管理與流程數位化。',
+          '管理 <strong>1,000+</strong> 筆付款紀錄，提升追蹤性與作業效率。'
+        ],
+        [
+          '管理學期預算 NT$<strong>100,000+</strong>，完成月度對帳與資金控管。',
+          '規劃年度預算並支援跨組資源配置。'
+        ]
+      ]
+    },
+    communities:{
+      eyebrow:'組織與社群參與',
+      title:'組織與社群參與',
+      items:[
+        {title:'人資小週末學員',meta:'人資小週末社群（學員） · 2026.02 — 至今',bullets:['參與 HR 主題學習與職涯交流活動。','將社群觀點應用在履歷優化與面試準備。']},
+        {title:'PM 組組員',meta:'XChange · 2026.04 — 至今',bullets:['參與 PM 討論與案例學習，強化產品思維。','與跨領域夥伴協作，提升問題定義與執行能力。']},
+        {title:'人資組組員',meta:'起駛簡報表達教育協會 · 2025.08 — 至今',bullets:['協調跨部門溝通與進度追蹤，支援團隊協作。','支援人資行政、資源規劃與流程文件整理。']},
+        {title:'財務組員',meta:'起駛簡報表達教育協會 · 2024.07 — 2025.08',bullets:['負責活動與日常收據稽核，管理 NT$200,000+ 支出。','協助與會計師事務所對接報稅與文件交接。']}
+      ]
+    },
+    projects:{eyebrow:'競賽作品集',title:'競賽作品集',filters:{all:'全部',uiux:'UI/UX',FinTech:'FinTech','創業競賽':'創業競賽',AI:'AI','法律':'法律','永續':'永續',HR:'HR','培訓':'培訓','其他':'其他'},pause:'暫停',play:'播放',prev:'上一張',next:'下一張',carousel:'專案輪播',position:'輪播位置',goToSlide:(n)=>`前往第 ${n} 張`,view:'查看詳情 →',maintenance:'維修中',participant:'參賽',appConcept:'App 設計提案',projectsUnit:'件作品'},
+    code:{
+      eyebrow:'Code',
+      title:'Code',
+      intro:'目前放上來的作品，多半來自我在財務、產品和營運情境裡遇到的真實問題。我會特別看流程能不能被使用、被追蹤、被交接，而不是只有畫面看起來完整。',
+      open:'開啟作品 ↗',
+      items:[
+        {title:'金融安心學堂',desc:'理財知識常常讓人一開始就有距離感，所以我把它做成比較好進入的學習型 Web App，讓使用者可以先理解觀念，再慢慢進到操作。',badge:'Base44',tags:['金融教育','Web App'],features:['以理財學習為核心定位','已獨立上線為 Web App','設計方向偏向更易入門的學習體驗'],tech:'技術：Base44、React、Supabase Storage、PWA'},
+        {title:'SROI 計算器',desc:'把 SROI 評估拆成比較直覺的互動步驟，讓使用者不用先讀完一整套方法論，也能開始估算社會影響力與投入產出。',badge:'AI Studio',tags:['Google AI Studio','SROI 工具'],features:['建立於 Google AI Studio','聚焦 SROI 計算與應用情境'],tech:'技術：Google AI Studio、SPA、Service Worker'},
+        {title:'ZenBudget 零基預算工具',desc:'用零基預算的邏輯重新整理個人理財流程，從帳戶總覽、預算分配到快速記帳，都盡量放在日常會真的打開使用的位置。',badge:'Web App',tags:['理財工具','零基預算'],features:['帳戶總覽整合現金、銀行與信用卡','以 Ready to Assign 進行預算分配','包含快速記帳、紀錄、共同與設定分頁'],tech:'技術：React、Express、Google Cloud Run'},
+        {title:'Portfolio 投資決策平台',desc:'把市場資訊、自選股、K 線圖、策略回測與投資組合分析放進同一個操作流程，減少看盤、配置與回顧時一直切工具的成本。',badge:'Vercel',tags:['FinTech','投資組合分析'],features:['整合市場總覽、自選股與自動更新報價','支援台股與美股資產追蹤，搭配個股 K 線圖','包含策略回測、績效分析、風險觀察與預算導向買入方案'],tech:'技術：Next.js、React、Tailwind CSS、Vercel'},
+        {title:'戰勤營運管理平台',desc:'原本分散在表單、訊息和不同部門裡的資訊，我整理成一個內部營運入口。團隊可以在同一個畫面看進度、任務、負責人與協作狀態。',badge:'War Room',tags:['內部工具','營運管理'],features:['支援公司層級 KPI、重要任務與時程追蹤，作為跨部門協作入口','把案件進度、任務優先級、廠商紀錄與溝通追蹤整合在同一個介面','從 dashboard 延伸到人資招募、教育訓練與日常營運協作'],tech:'技術：HTML、CSS、JavaScript、SheetJS、GitHub Pages',href:'https://beartwotw9-dot.github.io/warroom/',cta:'開啟作品 ↗'}
+      ]
+    },
+    n8n:{
+      eyebrow:'n8n',
+      title:'n8n 工作流',
+      intro:'n8n 作品我放在這一區。比起展示節點數量，我更想說明每條 workflow 解決哪個重複工作、資料怎麼進來、最後交付到哪裡。',
+      open:'查看流程證據 ↗',
+      items:[
+        {title:'會議逐字稿自動化系統',desc:'會議錄音上傳後，流程會自動轉錄、整理重點、產出待辦，並把結果送到 Drive、Sheets 和部門 Chat。原本會後整理最花時間的部分，被拆成一條可以重複跑的流程。',badge:'n8n',tags:['AI 自動化','會議流程'],features:['同事可透過 n8n 表單上傳部門、日期、會議名稱與音檔，接入日常會議流程','以 faster-whisper 與 Gemini 2.5 Flash 完成轉錄、整理與會議記錄生成，降低人工處理負擔','自動寫入 Google Drive、Sheets 與部門 Chat，並保留錯誤通知以支援穩定維運'],tech:'技術：n8n、faster-whisper、Gemini 2.5 Flash、Google Workspace、Tailscale Funnel、launchd',href:'assets/images/n8n-meeting-automation-sanitized.svg',cta:'查看流程證據 ↗'},
+        {title:'發票 OCR 分類歸檔系統',desc:'報帳照片進來後，流程會先壓縮圖片、跑 OCR、抓出金額與日期，再把檔案和紀錄送到對應的 Drive 與帳本分頁。目標是少一點重複貼資料，多一點可回查的紀錄。',badge:'n8n',tags:['財務自動化','OCR'],features:['同事可透過表單上傳發票或收據照片，接入日常報帳與歸檔流程','系統自動完成圖片壓縮、OCR 辨識、欄位擷取、檔名整理與雲端上傳','依分類分流寫入不同帳本分頁，讓後續追蹤、查找與對帳更有結構'],tech:'技術：n8n、OCR.space、Google Drive、Google Sheets、影像壓縮流程',href:'assets/images/n8n-invoice-ocr-sanitized.svg',cta:'查看流程證據 ↗'},
+        {title:'LINE Bot AI 回覆工作流',desc:'用 LINE 當入口，訊息進來後交給 n8n AI Agent 和 OpenAI Chat Model 處理，再透過 LINE Reply API 回到聊天視窗。這個作品主要測試的是：AI workflow 能不能藏在大家熟悉的聊天介面裡。',badge:'n8n',tags:['LINE Bot','AI 回覆'],features:['LINE Webhook 接收使用者訊息，並把內容送進 n8n workflow','AI Agent 串接 OpenAI Chat Model，產生可回覆的結構化內容','透過 HTTP Request 呼叫 LINE Reply API，把結果送回聊天視窗'],tech:'技術：n8n、LINE Messaging API、Webhook、OpenAI Chat Model、HTTP Request',href:'assets/images/n8n-line-bot-sanitized.svg',cta:'查看流程證據 ↗'}
+      ]
+    },
+    data:{
+      eyebrow:'數據',
+      title:'數據視覺化',
+      intro:'資料視覺化作品放在這裡。這些練習主要在處理一件事：怎麼把一堆原始資料整理成可以比較、可以討論、也看得出趨勢的畫面。',
+      open:'查看儀表板 ↗',
+      items:[
+        {title:'PM2.5',desc:'把空氣品質資料整理成可以互動查看的 Tableau dashboard，用來練習地區差異與污染趨勢的視覺呈現。',badge:'Tableau',tags:['數據視覺化','空氣品質'],features:['PM2.5 與空氣品質資料視覺化','互動式 dashboard 呈現'],tech:'技術：Tableau Public、dashboard design、data visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/pm25_17095222446470/1_1',cta:'查看儀表板 ↗'},
+        {title:'學生族群對自動化點餐系統滿意度與普及度的調查',desc:'以學生問卷資料為基礎，整理自動化點餐系統的使用經驗、接受度與滿意度，並用 dashboard 呈現主要觀察。',badge:'Tableau',tags:['數據視覺化','問卷分析'],features:['學生族群問卷結果整理','聚焦自動化點餐系統的普及度與滿意度'],tech:'技術：Tableau Public、dashboard design、interactive visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/1_17359904183130/1_1',cta:'查看儀表板 ↗'},
+        {title:'電子支付',desc:'整理電子支付相關資料，觀察不同指標之間的變化，讓趨勢比較可以用圖表快速掃過。',badge:'Tableau',tags:['數據視覺化','電子支付'],features:['電子支付相關資料整理','以 dashboard 方式呈現比較與趨勢'],tech:'技術：Tableau Public、dashboard design、interactive visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/_17178678899480/1',cta:'查看儀表板 ↗'}
+      ]
+    },
+    skills:{eyebrow:'技能',title:'技能與工具',cats:['數據分析','AI 工具應用','人資與組織發展','專案管理'],names:['Python（pandas, sklearn）','Power BI','R 語言','Excel / SQL','ChatGPT / Claude','Gemini / Google AI Studio','Perplexity / NotebookLM','生成式 AI × 工作流自動化 × RPA','招募甄選 & SOP 建置','教育訓練設計 & 主持','ESG 政策規劃','團體動力引導 & 主動傾聽','Linear / Asana','Notion','QA 測試規劃','計畫書撰寫申請'],certTitle:'📜 專業證照（14 張）',langTitle:'🌐 語言能力',langs:['中文（母語）','英文（中等）']},
+    contact:{eyebrow:'聯絡',lead:'有想聊的，<br>歡迎找我說話。',sub:'對人資科技、組織發展、產品管理、ESG 相關的職缺或合作機會保持開放。<br>有任何想法，歡迎直接聯繫，我會盡快回覆。',labels:['姓名','Email','訊息'],placeholders:['你的名字','your@email.com','Hi，我想聊聊…'],send:'送出訊息 →',sending:'送出中…',success:'訊息已送出，我會在 48 小時內回覆 🙌',fail:'送出失敗，請稍後再試一次。',linkedin:'LinkedIn / 游欣樺'},
+    footer:{copy:'© <span id="year"></span> 游欣樺 — 跨越資料與人心，讓決策有溫度。',top:'回到頂端 ↑'}
+  },
+  en:{
+    navLogo:'Dora Yu',
+    nav:{about:'About',experience:'Experience',projects:'Projects',communities:'Communities',code:'Code',n8n:'n8n',data:'Data',skills:'Skills',contact:'Contact'},
+    heroEyebrow:'YU, HSIN-HUA · Portfolio 2026',
+    heroLead:'Designing better systems for people to learn, work, and grow.',
+    heroIntro:'I build practical systems with AI workflows, automation, and product thinking across finance, operations, and organizational development.',
+    stats:['GPA 3.80 / 4.0 · Top 4 in Class','Professional Certifications','Business Competitions','Financial Records Managed'],
+    about:{
+      eyebrow:'About Me',
+      title:'About',
+      name:'Dora Yu (Hsin-Hua Yu)',
+      sub:'Finance × Product × Organizational Development',
+      location:'Taipei, Taiwan',
+      school:'National Taipei University of Business, Finance',
+      grad:'Expected Graduation: June 2026',
+      prose:[
+        'My work centers on the intersection of finance, organization, and product.',
+        'I care about how analytical thinking and organizational understanding support better decisions, stronger systems, and higher-quality execution.',
+        'Starting from a finance background, I continue to explore HR, product work, and digital practice. Over time, I have built a cross-disciplinary approach that combines business analysis, process design, generative AI, and workflow automation to turn ideas into practical solutions.'
+      ],
+      features:[
+        {title:'Sustainability Mindset',text:'Certified in ESG fundamentals and experienced in carbon-policy research.'},
+        {title:'Data-Driven Execution',text:'Python, Power BI, and analytics methods to turn insights into decisions.'},
+        {title:'AI & Automation',text:'Use generative AI, workflow automation, and RPA thinking to redesign repetitive work into clearer systems.'},
+        {title:'Facilitation & Training',text:'Hands-on training facilitation and internal workshop design experience.'}
+      ]
+    },
+    experience:{
+      eyebrow:'Experience',
+      title:'Work Experience',
+      arc:'Finance → Operations → Product → Organizational Development',
+      roles:['Organizational Development Associate','Product Team Intern','Human Resources Assistant','Operations Intern','Finance Intern','Director of Finance'],
+      orgs:['Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','IMAG Marketing · Taipei','20th Student Association of Department of Finance, NTUB'],
+      bullets:[
+        ['Partnered directly with the CEO to drive company-level project management and cross-functional execution.','Led corporate learning initiatives, delivering <strong>10+</strong> internal training sessions.','Led DPA award application, group insurance planning, title framework, and organization design projects, while supporting Odoo ERP implementation and AI Studio-based documentation workflows.'],
+        ['Designed QA coverage across <strong>9</strong> modules and <strong>50+</strong> test cases for Social War Room.','Owned bug tracking in Linear and led migration of issues from Asana.','Built a pipeline of <strong>60</strong> FriendPass leads to support growth and partnership development.'],
+        ['Conducted <strong>20+</strong> online interviews and observed <strong>50+</strong> interviews, contributing to a more structured interviewing process.','Revised <strong>10+</strong> internal policies and helped establish a standardized onboarding workflow.','Planned and facilitated <strong>4</strong> employee training sessions, including serving as lead presenter for one program.'],
+        ['Contributed to HR tech and operations initiatives, including SOP optimization and workflow automation.','Supported technical talent sourcing and candidate screening, including backend engineering positions.','Streamlined administrative and recruiting processes to improve coordination and operational efficiency.'],
+        ['Supported financial documentation and process digitization during IPO preparation.','Managed <strong>1,000+</strong> payment records and contributed to improving traceability and workflow efficiency.'],
+        ['Managed a semester budget of NT$<strong>100,000+</strong> and completed monthly reconciliations.','Led annual budget planning and cross-team resource allocation.']
+      ]
+    },
+    communities:{
+      eyebrow:'Leadership & Communities',
+      title:'Leadership & Communities',
+      items:[
+        {title:'HR Learning Fellow',meta:'HR Weekend Community · 2026.02 — Present',bullets:['Participated in HR-focused learning and career exchange sessions.','Applied insights to resume refinement and interview preparation.']},
+        {title:'Product Management Cohort Member',meta:'XChange · 2026.04 — Present',bullets:['Joined PM discussions and case learning to strengthen product thinking.','Collaborated with cross-functional peers on problem framing and execution.']},
+        {title:'Human Resources Team Member',meta:'Cheese Presentation Education Association · 2025.08 — Present',bullets:['Coordinated cross-functional communication and progress tracking to support team execution.','Supported HR administration, resource planning, and process documentation.']},
+        {title:'Finance Team Member',meta:'Cheese Presentation Education Association · 2024.07 — 2025.08',bullets:['Managed receipts and expense records for major events, covering NT$200,000+ in transactions.','Supported financial documentation and coordination with external accounting partners.']}
+      ]
+    },
+    projects:{eyebrow:'Projects',title:'Projects',filters:{all:'All',uiux:'UI/UX',FinTech:'FinTech','創業競賽':'Entrepreneurship',AI:'AI','法律':'Legal','永續':'Sustainability',HR:'HR','培訓':'Training','其他':'Other'},pause:'Pause',play:'Play',prev:'Previous',next:'Next',carousel:'Project carousel',position:'Carousel position',goToSlide:(n)=>`Go to slide ${n}`,view:'View Details →',maintenance:'Under Maintenance',participant:'Participant',appConcept:'App Design Concept',projectsUnit:'projects'},
+    code:{
+      eyebrow:'Code',
+      title:'Code',
+      intro:'Live builds from finance, product, and operations problems I have worked on. I care about whether the flow can be used, tracked, and handed off, not only whether the screen looks complete.',
+      open:'Launch App ↗',
+      items:[
+        {title:'Finance Peace Academy',desc:'A finance-learning web app built around making money topics feel more approachable. The project focuses on turning financial knowledge into a clearer and more accessible learning experience.',badge:'Base44',tags:['Financial Education','Web App'],features:['Finance-learning positioning with a clear educational focus','Built and published as a standalone web app','Designed as an accessible entry point for financial learning'],tech:'Tech: Base44, React, Supabase Storage, PWA'},
+        {title:'SROI Calculator',desc:'An AI Studio app that breaks SROI calculation into a clearer interaction flow, so users can start estimating social impact without reading a full methodology first.',badge:'AI Studio',tags:['Google AI Studio','SROI Tool'],features:['Built and hosted through Google AI Studio','Focused on SROI-related calculation and application flow'],tech:'Tech: Google AI Studio, SPA, Service Worker'},
+        {title:'ZenBudget',desc:'A zero-based budgeting tool that organizes personal finance into a clearer monthly workflow. From account overview to budget allocation and quick expense entry, the product is designed around everyday money management.',badge:'Web App',tags:['Finance Tool','Zero-Based Budgeting'],features:['Account overview with cash, bank, and credit balances','Ready to Assign budgeting flow and category-based allocation','Quick expense entry, records, shared tab, and settings navigation'],tech:'Tech: React, Express, Google Cloud Run'},
+        {title:'Portfolio Investment Platform',desc:'A personal finance platform that combines market data, watchlist tracking, K-line charts, backtesting, and portfolio analysis. It helps extend day-to-day market monitoring into allocation planning and investment decisions.',badge:'Vercel',tags:['FinTech','Portfolio Analytics'],features:['Market overview, auto-updating quotes, and watchlist tracking','TW and US asset tracking with stock-level K-line charts','Backtesting, performance analysis, risk observation, and budget-based buy planning'],tech:'Tech: Next.js, React, Tailwind CSS, Vercel'},
+        {title:'War Room Operations Platform',desc:'Scattered forms, updates, and department workflows were reorganized into one internal operations entry point, so the team can check progress, owners, and collaboration status from the same place.',badge:'War Room',tags:['Internal Tools','Operations'],features:['Used for real cross-functional operations, with company KPI tracking, key tasks, and timeline-based visibility','Supports ongoing project progress, task priority, vendor records, and communication follow-up in one interface','Extends into HR recruiting, training management, and day-to-day coordination instead of staying as a static dashboard'],tech:'Tech: HTML, CSS, JavaScript, SheetJS, GitHub Pages',href:'https://beartwotw9-dot.github.io/warroom/',cta:'Launch App ↗'}
+      ]
+    },
+    n8n:{
+      eyebrow:'n8n',
+      title:'n8n Workflows',
+      intro:'A dedicated view of internal workflows I build with n8n, focused on reducing repetitive work and turning everyday inputs into trackable outputs.',
+      open:'View Workflow Evidence ↗',
+      items:[
+        {title:'Meeting Transcript Automation System',desc:'After a meeting recording is uploaded, the workflow transcribes it, structures the notes, extracts follow-up items, and sends the result to Drive, Sheets, and the team chat.',badge:'n8n',tags:['AI Automation','Meeting Workflow'],features:['Colleagues can submit department, date, meeting name, and audio file through an n8n form as part of the meeting workflow','faster-whisper and Gemini 2.5 Flash handle transcription, cleanup, and structured meeting-note generation with minimal manual intervention','Outputs are routed into Google Drive, Sheets, and department Chat spaces, with error notification flow for day-to-day reliability'],tech:'Tech: n8n, faster-whisper, Gemini 2.5 Flash, Google Workspace, Tailscale Funnel, launchd',href:'assets/images/n8n-meeting-automation-sanitized.svg',cta:'View Workflow Evidence ↗'},
+        {title:'Invoice OCR Classification & Filing System',desc:'Receipt images go through compression, OCR, field extraction, file naming, Drive archiving, and ledger routing, turning a repetitive finance task into a more traceable workflow.',badge:'n8n',tags:['Finance Automation','OCR'],features:['Staff can submit receipt or invoice images through a form as part of the reimbursement and filing workflow','The flow handles image compression, OCR, field extraction, file naming, and Drive upload before the record is finalized','Category-based routing sends each record into the correct ledger sheet so finance tracking stays structured and searchable'],tech:'Tech: n8n, OCR.space, Google Drive, Google Sheets, image compression workflow',href:'assets/images/n8n-invoice-ocr-sanitized.svg',cta:'View Workflow Evidence ↗'},
+        {title:'LINE Bot AI Reply Workflow',desc:'LINE works as the entry point: messages go into n8n, pass through an AI Agent and OpenAI Chat Model, then return to the chat window through the LINE Reply API.',badge:'n8n',tags:['LINE Bot','AI Reply Flow'],features:['LINE Webhook receives user messages and passes them into the n8n workflow','AI Agent uses an OpenAI Chat Model to generate structured replies','HTTP Request sends the result back through the LINE Reply API'],tech:'Tech: n8n, LINE Messaging API, Webhook, OpenAI Chat Model, HTTP Request',href:'assets/images/n8n-line-bot-sanitized.svg',cta:'View Workflow Evidence ↗'}
+      ]
+    },
+    data:{
+      eyebrow:'Data',
+      title:'Data Visualization',
+      intro:'A small collection of data visualization work where I use dashboards to turn raw information into clearer patterns and more readable insights.',
+      open:'View Dashboard ↗',
+      items:[
+        {title:'PM2.5',desc:'A Tableau dashboard for reviewing PM2.5 and air-quality data through interactive charts and regional comparisons.',badge:'Tableau',tags:['Data Visualization','Air Quality'],features:['PM2.5 and air quality data visualization','Presented as an interactive dashboard'],tech:'Tech: Tableau Public, dashboard design, data visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/pm25_17095222446470/1_1',cta:'View Dashboard ↗'},
+        {title:'Automated Ordering Survey Dashboard',desc:'A survey dashboard that organizes student responses about automated ordering systems into adoption and satisfaction views.',badge:'Tableau',tags:['Data Visualization','Survey Analysis'],features:['Student survey result visualization','Focused on adoption and satisfaction with automated ordering systems'],tech:'Tech: Tableau Public, dashboard design, interactive visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/1_17359904183130/1_1',cta:'View Dashboard ↗'},
+        {title:'Electronic Payments',desc:'A Tableau dashboard for scanning electronic-payment data and comparing trend changes across key views.',badge:'Tableau',tags:['Data Visualization','Electronic Payments'],features:['Electronic payment data overview','Uses dashboard format for trend and comparison reading'],tech:'Tech: Tableau Public, dashboard design, interactive visualization',href:'https://public.tableau.com/app/profile/hsin.hua.yu/viz/_17178678899480/1',cta:'View Dashboard ↗'}
+      ]
+    },
+    skills:{eyebrow:'Skills',title:'Skills & Tools',cats:['Data Analysis','AI Applications','HR & Organizational Development','Project Management'],names:['Python (pandas, sklearn)','Power BI','R','Excel / SQL','ChatGPT / Claude','Gemini / Google AI Studio','Perplexity / NotebookLM','Generative AI × Workflow Automation × RPA','Recruiting & SOP Design','Training Design & Facilitation','ESG Policy Planning','Group Facilitation & Active Listening','Linear / Asana','Notion','QA Test Planning','Proposal Writing'],certTitle:'📜 Professional Certifications (14)',langTitle:'🌐 Languages',langs:['Mandarin (Native)','English (Intermediate)']},
+    contact:{eyebrow:'Contact',lead:'If you’d like to connect,<br>let’s talk.',sub:'I’m open to roles and collaborations in HR tech, organizational development, product management, and ESG.<br>Feel free to reach out anytime and I’ll reply as soon as possible.',labels:['Name','Email','Message'],placeholders:['Your name','your@email.com','Hi, I\'d love to connect...'],send:'Send Message →',sending:'Sending...',success:'Message sent. I’ll reply within 48 hours 🙌',fail:'Failed to send. Please try again in a moment.',linkedin:'LinkedIn / Dora Yu'},
+    footer:{copy:'© <span id="year"></span> Dora Yu — Designing better systems for people to learn, work, and grow.',top:'Back to Top ↑'}
+  }
+};
+
+function setText(el,text){if(el)el.textContent=text;}
+function setHtml(el,html){if(el)el.innerHTML=html;}
+
+function syncPageLanguage(lang){
+  const t=lang==='zh'?i18n.zh:i18n.en;
+  const navAnchors=[...document.querySelectorAll('.nav-links a')];
+  const mobileAnchors=[...document.querySelectorAll('#mobile-menu a')];
+  setText(document.querySelector('.nav-logo'),t.navLogo);
+  const navMap={'#about':t.nav.about,'#experience':t.nav.experience,'#projects':t.nav.projects,'#communities':t.nav.communities,'#code':t.nav.code,'#n8n':t.nav.n8n,'#data':t.nav.data,'#skills':t.nav.skills,'#contact':t.nav.contact};
+  navAnchors.forEach(a=>setText(a,navMap[a.getAttribute('href')]||a.textContent));
+  mobileAnchors.forEach(a=>setText(a,navMap[a.getAttribute('href')]||a.textContent));
+  setText(document.querySelector('.hero-eyebrow'),t.heroEyebrow);
+  setText(document.getElementById('hero-lead'),t.heroLead);
+  setText(document.getElementById('hero-intro'),t.heroIntro);
+  [...document.querySelectorAll('.hero-stats .hstat-l')].forEach((el,idx)=>setText(el,t.stats[idx]||el.textContent));
+
+  setText(document.querySelector('#about .sec-eyebrow'),t.about.eyebrow);
+  setText(document.querySelector('#about .sec-title'),t.about.title);
+  setText(document.querySelector('.about-name'),t.about.name);
+  setText(document.querySelector('.about-sub'),t.about.sub);
+  const aboutMeta=[...document.querySelectorAll('.about-meta-row span:last-child,.about-meta-row a')];
+  if(aboutMeta[0])setText(aboutMeta[0],t.about.location);
+  if(aboutMeta[1])setText(aboutMeta[1],t.about.school);
+  if(aboutMeta[2])setText(aboutMeta[2],t.about.grad);
+  const aboutProse=[...document.querySelectorAll('.about-prose p')];
+  t.about.prose.forEach((line,idx)=>setText(aboutProse[idx],line));
+  const features=[...document.querySelectorAll('.about-features .afeature')];
+  features.forEach((card,idx)=>{
+    const item=t.about.features[idx];
+    if(!item)return;
+    setText(card.querySelector('h4'),item.title);
+    setText(card.querySelector('p'),item.text);
+  });
+
+  setText(document.querySelector('#experience .sec-eyebrow'),t.experience.eyebrow);
+  setText(document.querySelector('#experience .sec-title'),t.experience.title);
+  setText(document.querySelector('#experience .sub-arc'),t.experience.arc);
+  const expItems=[...document.querySelectorAll('#experience .tl-item')];
+  expItems.forEach((item,idx)=>{
+    setText(item.querySelector('.tl-role'),t.experience.roles[idx]||'');
+    setText(item.querySelector('.tl-org'),t.experience.orgs[idx]||'');
+    const list=item.querySelector('.tl-list-items');
+    const bullets=t.experience.bullets[idx];
+    if(list&&bullets)list.innerHTML=bullets.map(line=>`<li>${line}</li>`).join('');
+  });
+
+  setText(document.querySelector('#communities .sec-eyebrow'),t.communities.eyebrow);
+  setText(document.querySelector('#communities .sec-title'),t.communities.title);
+  const communityCards=[...document.querySelectorAll('#communities .mini-card')];
+  communityCards.forEach((card,idx)=>{
+    const item=t.communities.items[idx];
+    if(!item)return;
+    setText(card.querySelector('h3'),item.title);
+    setText(card.querySelector('.mini-meta'),item.meta);
+    const list=card.querySelector('.mini-list');
+    if(list)list.innerHTML=item.bullets.map(line=>`<li>${line}</li>`).join('');
+  });
+
+  setText(document.querySelector('#projects .sec-eyebrow'),t.projects.eyebrow);
+  setText(document.querySelector('#projects .sec-title'),t.projects.title);
+  [...document.querySelectorAll('.competition-filter')].forEach(btn=>{
+    const key=btn.dataset.filter;
+    if(t.projects.filters[key])setText(btn,t.projects.filters[key]);
+  });
+  if(pauseBtn&&pauseBtn.getAttribute('aria-pressed')!=='true')setText(pauseBtn,t.projects.pause);
+  setText(prevBtn,t.projects.prev==='上一張'?'‹':'‹');
+  setText(nextBtn,t.projects.next==='下一張'?'›':'›');
+  if(prevBtn)prevBtn.setAttribute('aria-label',t.projects.prev);
+  if(nextBtn)nextBtn.setAttribute('aria-label',t.projects.next);
+  if(carouselTrack)carouselTrack.setAttribute('aria-label',t.projects.carousel);
+  if(dotsWrap)dotsWrap.setAttribute('aria-label',t.projects.position);
+
+  setText(document.querySelector('#code .sec-eyebrow'),t.code.eyebrow);
+  setText(document.querySelector('#code .sec-title'),t.code.title);
+  setText(document.getElementById('code-intro'),t.code.intro);
+  const codeCards=[...document.querySelectorAll('#code .code-card')];
+  codeCards.forEach((card,idx)=>{
+    const item=t.code.items[idx];
+    if(!item)return;
+    setText(card.querySelector('.code-badge'),item.badge);
+    setText(card.querySelector('.code-title'),item.title);
+    setText(card.querySelector('.code-desc'),item.desc);
+    setText(card.querySelector('.code-tech'),item.tech);
+    const tags=[...card.querySelectorAll('.code-pill')];
+    item.tags.forEach((tag,tagIdx)=>{
+      if(tags[tagIdx])setText(tags[tagIdx],tag);
+    });
+    const features=card.querySelector('.code-features');
+    if(features&&item.features){
+      features.innerHTML=item.features.map(feature=>`<li>${feature}</li>`).join('');
+    }
+    const link=card.querySelector('.code-link');
+    if(link){
+      const href=item.href||link.getAttribute('href')||'#code';
+      link.setAttribute('href',href);
+      setText(link,item.cta||t.code.open);
+      link.classList.toggle('is-disabled',href==='#code');
+      if(href==='#code'){
+        link.setAttribute('aria-disabled','true');
+      }else{
+        link.removeAttribute('aria-disabled');
+      }
+    }
+  });
+
+  setText(document.querySelector('#n8n .sec-eyebrow'),t.n8n.eyebrow);
+  setText(document.querySelector('#n8n .sec-title'),t.n8n.title);
+  setText(document.getElementById('n8n-intro'),t.n8n.intro);
+  const n8nCards=[...document.querySelectorAll('#n8n .code-card')];
+  n8nCards.forEach((card,idx)=>{
+    const item=t.n8n.items[idx];
+    if(!item)return;
+    setText(card.querySelector('.code-badge'),item.badge);
+    setText(card.querySelector('.code-title'),item.title);
+    setText(card.querySelector('.code-desc'),item.desc);
+    setText(card.querySelector('.code-tech'),item.tech);
+    const tags=[...card.querySelectorAll('.code-pill')];
+    item.tags.forEach((tag,tagIdx)=>{
+      if(tags[tagIdx])setText(tags[tagIdx],tag);
+    });
+    const features=card.querySelector('.code-features');
+    if(features&&item.features){
+      features.innerHTML=item.features.map(feature=>`<li>${feature}</li>`).join('');
+    }
+    const link=card.querySelector('.code-link');
+    if(link){
+      const href=item.href||link.getAttribute('href')||'#n8n';
+      link.setAttribute('href',href);
+      setText(link,item.cta||t.n8n.open);
+      link.classList.toggle('is-disabled',href==='#n8n');
+      if(href==='#n8n'){
+        link.setAttribute('aria-disabled','true');
+      }else{
+        link.removeAttribute('aria-disabled');
+      }
+    }
+  });
+
+  setText(document.querySelector('#data .sec-eyebrow'),t.data.eyebrow);
+  setText(document.querySelector('#data .sec-title'),t.data.title);
+  setText(document.getElementById('data-intro'),t.data.intro);
+  const dataCards=[...document.querySelectorAll('#data .code-card')];
+  dataCards.forEach((card,idx)=>{
+    const item=t.data.items[idx];
+    if(!item)return;
+    setText(card.querySelector('.code-badge'),item.badge);
+    setText(card.querySelector('.code-title'),item.title);
+    setText(card.querySelector('.code-desc'),item.desc);
+    setText(card.querySelector('.code-tech'),item.tech);
+    const tags=[...card.querySelectorAll('.code-pill')];
+    item.tags.forEach((tag,tagIdx)=>{
+      if(tags[tagIdx])setText(tags[tagIdx],tag);
+    });
+    const features=card.querySelector('.code-features');
+    if(features&&item.features){
+      features.innerHTML=item.features.map(feature=>`<li>${feature}</li>`).join('');
+    }
+    const link=card.querySelector('.code-link');
+    if(link){
+      const href=item.href||link.getAttribute('href')||'#data';
+      link.setAttribute('href',href);
+      setText(link,item.cta||t.data.open);
+      link.classList.toggle('is-disabled',href==='#data');
+      if(href==='#data'){
+        link.setAttribute('aria-disabled','true');
+      }else{
+        link.removeAttribute('aria-disabled');
+      }
+    }
+  });
+
+  setText(document.querySelector('#skills .sec-eyebrow'),t.skills.eyebrow);
+  setText(document.querySelector('#skills .sec-title'),t.skills.title);
+  [...document.querySelectorAll('.skill-cat')].forEach((el,idx)=>setText(el,t.skills.cats[idx]||el.textContent));
+  [...document.querySelectorAll('.skill-name')].forEach((el,idx)=>setText(el,t.skills.names[idx]||el.textContent));
+  const certTitles=[...document.querySelectorAll('.cert-title')];
+  if(certTitles[0])setText(certTitles[0],t.skills.certTitle);
+  if(certTitles[1])setText(certTitles[1],t.skills.langTitle);
+  const langPills=[...document.querySelectorAll('.cert-card:last-child .cert-pill')];
+  if(langPills[0])setText(langPills[0],t.skills.langs[0]);
+  if(langPills[1])setText(langPills[1],t.skills.langs[1]);
+
+  setText(document.querySelector('#contact .sec-eyebrow'),t.contact.eyebrow);
+  setHtml(document.querySelector('.contact-lead'),t.contact.lead);
+  setHtml(document.querySelector('.contact-sub'),t.contact.sub);
+  const labels=[...document.querySelectorAll('#contact .cf label')];
+  labels.forEach((el,idx)=>setText(el,t.contact.labels[idx]||el.textContent));
+  const nameInput=document.getElementById('contact-name');
+  const mailInput=document.getElementById('contact-email');
+  const msgInput=document.getElementById('contact-message');
+  if(nameInput)nameInput.placeholder=t.contact.placeholders[0];
+  if(mailInput)mailInput.placeholder=t.contact.placeholders[1];
+  if(msgInput)msgInput.placeholder=t.contact.placeholders[2];
+  setText(document.querySelector('.btn-send'),t.contact.send);
+  setText(document.getElementById('form-success'),t.contact.success);
+  const linkedinLink=document.querySelector('.contact-links a[href*="linkedin"]');
+  if(linkedinLink)linkedinLink.lastChild.textContent=` ${t.contact.linkedin}`;
+
+  setHtml(document.querySelector('.foot-copy'),t.footer.copy);
+  setText(document.querySelector('.foot-back'),t.footer.top);
+}
+
+function syncLanguageLabel(){
+  if(!langToggle)return;
+  const isZh=rootEl.classList.contains('lang-zh-active');
+  langToggle.textContent=isZh?'EN':'中';
+  langToggle.setAttribute('aria-label',isZh?'Switch to English':'切換為中文');
+}
+function applyLanguage(lang){
+  const useZh=lang==='zh';
+  currentLang=useZh?'zh':'en';
+  rootEl.classList.toggle('lang-zh-active',useZh);
+  rootEl.setAttribute('lang',useZh?'zh-Hant':'en');
+  localStorage.setItem('lang-preference',useZh?'zh':'en');
+  syncLanguageLabel();
+  syncPageLanguage(currentLang);
+  syncBotLanguage();
+  renderCategoryRail();
+  renderCompetitions();
+  renderDots();
+  updateDots();
+}
+langToggle?.addEventListener('click',()=>{
+  const nextLang=rootEl.classList.contains('lang-zh-active')?'en':'zh';
+  applyLanguage(nextLang);
+});
+themeToggle?.addEventListener('click',()=>{
+  isDark=!rootEl.classList.contains('dark');
+  rootEl.classList.toggle('dark',isDark);
+  localStorage.setItem('theme-preference',isDark?'dark':'light');
+  syncThemeIcon();
+});
+
+// Mobile menu
+const mBtn=document.getElementById('mobile-btn'),mMenu=document.getElementById('mobile-menu');
+let mOpen=false;
+mBtn.addEventListener('click',()=>{
+  mOpen=!mOpen;
+  mMenu.style.display=mOpen?'flex':'none';
+  const[b1,b2,b3]=mBtn.querySelectorAll('span');
+  b1.style.transform=mOpen?'rotate(45deg) translate(4px,5px)':'none';
+  b2.style.opacity=mOpen?'0':'1';
+  b3.style.transform=mOpen?'rotate(-45deg) translate(4px,-5px)':'none';
+});
+mMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mOpen=false;mMenu.style.display='none';
+  mBtn.querySelectorAll('span').forEach(s=>{s.style.transform='none';s.style.opacity='1'});
+}));
+
+const navEl=document.querySelector('nav');
+const progressBar=document.getElementById('reading-progress');
+function updateScrollUi(){
+  const scrolled=window.scrollY>80;
+  navEl?.classList.toggle('scrolled',scrolled);
+  const doc=document.documentElement;
+  const total=doc.scrollHeight-window.innerHeight;
+  const pct=total>0?(window.scrollY/total)*100:0;
+  if(progressBar)progressBar.style.width=`${Math.min(100,Math.max(0,pct))}%`;
+}
+window.addEventListener('scroll',updateScrollUi,{passive:true});
+updateScrollUi();
+
+// Scroll reveal
+document.querySelectorAll('.reveal').forEach((el,idx)=>{
+  el.style.setProperty('--rv-delay',`${Math.min(idx*70,560)}ms`);
+});
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// Contact form (Formspree)
+const contactForm=document.getElementById('contact-form');
+const formSuccess=document.getElementById('form-success');
+contactForm?.addEventListener('submit',async(event)=>{
+  event.preventDefault();
+  const submitBtn=contactForm.querySelector('.btn-send');
+  if(submitBtn){
+    submitBtn.disabled=true;
+    submitBtn.textContent=currentLang==='zh'?i18n.zh.contact.sending:'Sending...';
+  }
+  try{
+    const response=await fetch(contactForm.action,{
+      method:'POST',
+      body:new FormData(contactForm),
+      headers:{'Accept':'application/json'}
+    });
+    if(!response.ok)throw new Error('submit failed');
+    contactForm.style.display='none';
+    if(formSuccess)formSuccess.style.display='block';
+  }catch(error){
+    if(submitBtn){
+      submitBtn.disabled=false;
+      submitBtn.textContent=currentLang==='zh'?i18n.zh.contact.send:'Send Message →';
+    }
+    alert(currentLang==='zh'?i18n.zh.contact.fail:'Failed to send. Please try again in a moment.');
+  }
+});
+
+// Portfolio-only assistant
+const botPanel=document.getElementById('portfolio-bot-panel');
+const botToggle=document.getElementById('bot-toggle');
+const botClose=document.getElementById('bot-close');
+const botMessages=document.getElementById('bot-messages');
+const botForm=document.getElementById('bot-form');
+const botInput=document.getElementById('bot-input');
+const botQuick=document.getElementById('bot-quick');
+const botTitle=document.getElementById('bot-title');
+const botSubtitle=document.getElementById('bot-subtitle');
+const botSend=document.getElementById('bot-send');
+const botToggleText=document.getElementById('bot-toggle-text');
+let botWelcomed=false;
+
+const botCopy={
+  zh:{
+    title:'DoraBot 作品集小助手',
+    subtitle:'只回答這個網站裡的內容',
+    toggle:'問作品集小助手',
+    placeholder:'問我這個網站的內容...',
+    send:'送出',
+    close:'關閉作品集小助手',
+    welcome:'嗨，我是 DoraBot。你可以問我 Dora 的經歷、作品、n8n workflow、技能或聯絡方式。我只回答這個網站裡有的內容。',
+    outside:'這題超出這個作品集網站的範圍了。我只能回答 Dora 的經歷、作品、n8n、自動化能力、資料視覺化、技能與聯絡方式。',
+    chips:[
+      ['請介紹 Dora','介紹 Dora'],
+      ['有哪些 n8n 作品','n8n 作品'],
+      ['有哪些 AI 自動化能力','AI 自動化能力'],
+      ['怎麼聯絡 Dora','聯絡方式']
+    ]
+  },
+  en:{
+    title:'DoraBot Portfolio Helper',
+    subtitle:'Only answers questions about this site',
+    toggle:'Ask DoraBot',
+    placeholder:'Ask about this portfolio...',
+    send:'Send',
+    close:'Close portfolio assistant',
+    welcome:'Hi, I am DoraBot. You can ask me about Dora, her experience, projects, n8n workflows, skills, or contact info. I only answer based on this portfolio site.',
+    outside:'That is outside this portfolio site. I can only answer questions about Dora, her experience, projects, n8n work, automation skills, data visualization, skills, and contact information.',
+    chips:[
+      ['Introduce Dora','About Dora'],
+      ['What n8n workflows are shown?','n8n Workflows'],
+      ['What AI automation skills are shown?','AI Automation'],
+      ['How can I contact Dora?','Contact']
+    ]
+  }
+};
+
+function normalizeQuestion(text){
+  return (text||'').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();
+}
+function hasAny(text,words){return words.some(word=>text.includes(word));}
+function isPortfolioQuestion(text){
+  const q=normalizeQuestion(text);
+  if(!q)return false;
+  const allowed=[
+    'dora','游欣樺','欣樺','作品','作品集','portfolio','project','專案','經歷','experience','工作','work','實習','intern',
+    '技能','skill','tool','工具','n8n','workflow','自動化','automation','ai','line','bot','ocr','發票','會議','逐字稿',
+    'data','資料','數據','tableau','dashboard','視覺化','聯絡','contact','email','linkedin','履歷','resume',
+    '金融','財務','finance','product','產品','組織','hr','營運','war room','portfolio 投資','投資','證照','gpa'
+  ];
+  return hasAny(q,allowed);
+}
+function getPortfolioAnswer(text){
+  const q=normalizeQuestion(text);
+  const zh=currentLang==='zh';
+  if(!isPortfolioQuestion(q))return botCopy[currentLang].outside;
+  if(hasAny(q,['聯絡','contact','email','linkedin','找','合作'])){
+    return zh
+      ? '可以從網站的「聯絡我」區塊找 Dora。Email 是 doratwotw@gmail.com，也有 LinkedIn / 游欣樺。網站上也有表單可以直接留言。'
+      : 'You can reach Dora through the Contact section. The site lists doratwotw@gmail.com, LinkedIn / Dora Yu, and a contact form.';
+  }
+  if(hasAny(q,['n8n','workflow','line','bot','ocr','發票','會議','逐字稿'])){
+    return zh
+      ? '網站目前放了 3 個 n8n workflow：會議逐字稿自動化、發票 OCR 分類歸檔、LINE Bot AI 回覆。它們都不是只展示節點，而是說明資料怎麼進來、流程怎麼處理、最後送到哪裡。'
+      : 'The site shows three n8n workflows: meeting transcript automation, invoice OCR classification and filing, and a LINE Bot AI reply flow. Each one explains the input, processing, and final delivery.';
+  }
+  if(hasAny(q,['ai','自動化','automation','工具','skill','技能','能力'])){
+    return zh
+      ? 'Dora 的 AI 自動化能力主要呈現在 n8n、Google AI Studio、流程設計、資料整理與內部工具上。她的習慣是先拆流程，再判斷哪一段適合交給 AI 或自動化工具處理。'
+      : 'Dora shows AI automation skills through n8n, Google AI Studio, process design, data organization, and internal tools. Her approach is to break down the workflow first, then decide which steps should be automated.';
+  }
+  if(hasAny(q,['經歷','experience','工作','實習','intern','hr','營運','product','產品','組織'])){
+    return zh
+      ? 'Dora 的經歷橫跨財務、營運、產品與組織發展。網站列出組織發展專員、產品團隊實習生、人資助理、營運實習生、財務實習生與系學會財務長等經歷。'
+      : 'Dora has worked across finance, operations, product, and organizational development. The site lists roles in organizational development, product, HR, operations, finance, and student association finance leadership.';
+  }
+  if(hasAny(q,['code','web app','app','程式','專案','project','作品','war room','portfolio','zenbudget','sroi','金融安心'])){
+    return zh
+      ? 'Code 區塊包含金融安心學堂、SROI 計算器、ZenBudget、Portfolio 投資決策平台和戰勤營運管理平台。這些作品比較重視流程能不能被使用、追蹤與交接。'
+      : 'The Code section includes Finance Peace Academy, SROI Calculator, ZenBudget, Portfolio Investment Platform, and War Room Operations Platform. The focus is on usable, trackable, handoff-ready workflows.';
+  }
+  if(hasAny(q,['data','資料','數據','tableau','dashboard','視覺化'])){
+    return zh
+      ? 'Data 區塊放了 Tableau 視覺化作品，包含 PM2.5、自動化點餐系統問卷，以及電子支付資料。重點是把原始資料整理成可以比較和討論的畫面。'
+      : 'The Data section includes Tableau work on PM2.5, automated ordering survey results, and electronic-payment data, focusing on making raw information easier to compare and discuss.';
+  }
+  if(hasAny(q,['dora','游欣樺','欣樺','介紹','about','who','誰'])){
+    return zh
+      ? 'Dora Yu（游欣樺）是北商財金系學生，作品集主軸在財務、產品、組織發展與 AI workflow。她常把真實工作裡遇到的流程問題整理成可用的工具或自動化系統。'
+      : 'Dora Yu is a finance student whose portfolio sits across finance, product, organizational development, and AI workflows. Many projects come from real workflow problems she has tried to turn into usable tools.';
+  }
+  return zh
+    ? '這個網站主要可以問 Dora 的背景、工作經歷、Code 作品、n8n workflow、資料視覺化、技能與聯絡方式。你可以換個方式問我其中一項。'
+    : 'You can ask me about Dora, her experience, Code projects, n8n workflows, data visualization, skills, or contact information. Try asking about one of those areas.';
+}
+function addBotMessage(text,from='bot'){
+  if(!botMessages)return;
+  const msg=document.createElement('div');
+  msg.className=`bot-msg ${from}`;
+  msg.textContent=text;
+  botMessages.appendChild(msg);
+  botMessages.scrollTop=botMessages.scrollHeight;
+}
+function openBot(){
+  if(!botPanel||!botToggle)return;
+  botPanel.classList.add('open');
+  botToggle.setAttribute('aria-expanded','true');
+  if(!botWelcomed){
+    addBotMessage(botCopy[currentLang].welcome,'bot');
+    botWelcomed=true;
+  }
+  setTimeout(()=>botInput?.focus(),80);
+}
+function closeBot(){
+  botPanel?.classList.remove('open');
+  botToggle?.setAttribute('aria-expanded','false');
+}
+function submitBotQuestion(question){
+  const text=(question||botInput?.value||'').trim();
+  if(!text)return;
+  addBotMessage(text,'user');
+  if(botInput)botInput.value='';
+  window.setTimeout(()=>addBotMessage(getPortfolioAnswer(text),'bot'),160);
+}
+function syncBotLanguage(){
+  const copy=botCopy[currentLang]||botCopy.zh;
+  setText(botTitle,copy.title);
+  setText(botSubtitle,copy.subtitle);
+  setText(botToggleText,copy.toggle);
+  if(botInput)botInput.placeholder=copy.placeholder;
+  setText(botSend,copy.send);
+  if(botClose)botClose.setAttribute('aria-label',copy.close);
+  if(botQuick){
+    botQuick.innerHTML=copy.chips.map(([question,label])=>`<button class="bot-chip" type="button" data-question="${question}">${label}</button>`).join('');
+  }
+}
+botToggle?.addEventListener('click',()=>botPanel?.classList.contains('open')?closeBot():openBot());
+botClose?.addEventListener('click',closeBot);
+botForm?.addEventListener('submit',(event)=>{
+  event.preventDefault();
+  submitBotQuestion();
+});
+botQuick?.addEventListener('click',(event)=>{
+  const chip=event.target.closest('.bot-chip');
+  if(!chip)return;
+  submitBotQuestion(chip.dataset.question);
+});
+syncBotLanguage();
+
+// Competition carousel
+const categoryGradients={
+  'FinTech':'linear-gradient(160deg, #2C4A3E, #6B9070)',
+  '創業競賽':'linear-gradient(160deg, #4A3020, #A0704A)',
+  'AI':'linear-gradient(160deg, #2A3A4A, #5A7A8A)',
+  '法律':'linear-gradient(160deg, #3A3020, #8A7A50)',
+  '永續':'linear-gradient(160deg, #2A4030, #5A8060)',
+  'HR':'linear-gradient(160deg, #3A2A40, #7A5A80)',
+  '培訓':'linear-gradient(160deg, #402A2A, #806040)',
+  'default':'linear-gradient(160deg, #3A3530, #8A7A6A)'
+};
+const competitionData=[{"id":"2024-少年頭家-雲林農穫","title":"雲林農穫百貨園區","year":"2024","award":null,"awarded":false,"category":"創業競賽","tags":["創業競賽","雲林","地方創生","永續園區"],"summary":"以雲林在地農業和高鐵周邊發展為背景，提出結合商業、飲食與體驗活動的園區構想。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"與在地連鎖生鮮及農會合作導入產地直銷，並串接 DIY 體驗如花生小學堂與潤餅實作。頂樓太陽能供電降低營運能耗，社群行銷結合打卡點與主題活動擴大聲量。","highlights":"主軸聚焦在地化、體驗化、共融化、永續化。以可負擔價格搭配多元品項，提高大眾採用率，同時讓小農有穩定曝光與銷售場景。","team":"你濃我農小隊：崔庭瑀、游欣樺、施筑馨、賴致諺","spotlightEn":["Local market analysis","Business proposal","Mentor feedback"],"focusEn":"Local market analysis / Business proposal"},{"id":"2024-新創之星-三隻雞腿排","title":"等下要吃什麼 APP","year":"2024","award":null,"awarded":false,"category":"創業競賽","tags":["App設計","AI推薦","餐飲科技","創業競賽"],"summary":"針對「今天吃什麼」這個日常痛點，提出結合推薦、篩選與外送整合的 App 構想。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"以歷史行為與評價持續訓練推薦模型，串接食安資料庫提供風險提醒，並用卡路里追蹤與長期飲食分析提升留存。商業端對接外送平台與店家合作。","highlights":"核心價值是「健康、省時、實惠」三者並重。團隊分工完整，從策略、技術到財務與商務都能對應，具備從提案走向產品化的可行性。","team":"三隻雞腿排：崔庭瑀、游欣樺、賴致諺","spotlightEn":["Tech-track proposal","Cross-school team collaboration","Startup concept paper"],"focusEn":"App design / AI recommendations"},{"id":"2025-財務健康三明治","title":"財務健康三明治","year":"2024","award":"全國第21名","awarded":true,"category":"FinTech","tags":["財務規劃","健康管理","三明治族群","FinTech"],"summary":"以三明治族群為對象，提出結合記帳、預算、健康管理與長照資訊的服務概念。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"模組化推進飲食、交通、房租、水電、長照、教育支出分類，並加入投資社群討論、分齡飲食建議與長照服務媒合，形成完整家庭支持鏈。","highlights":"亮點在於把財務健康與生活健康放在同一個儀表板，讓家庭可用同一套資料節奏共同調整決策，而不是各自為政。","team":"團體協作","spotlightEn":["Financial-service research","Proposal pitch","Mobile-payment scenarios"],"focusEn":"Financial-service research / Proposal pitch"},{"id":"2023-投資競賽","title":"櫃買中心投資模擬競賽","year":"2024","award":null,"awarded":false,"category":"FinTech","tags":["投資模擬","策略驗證","風險管理","團隊協作"],"summary":"透過模擬交易練習投資判斷、風險控管和團隊分工。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"團隊分工為產業追蹤、技術面判讀、風險檢視三軸，所有交易皆記錄理由並回看得失，遇到虧損時優先處理流程與紀律而非情緒。","highlights":"強調「交易心態」與「團隊默契」的管理，避免只看報酬忽略過程品質，讓每次失誤都可被轉化為可追溯的學習資產。","team":"團體協作","spotlightEn":["Technical analysis","Fundamental analysis","Portfolio management"],"focusEn":"Investment simulation / Strategy validation"},{"id":"2024-新創盃","title":"Chaptalk 閱讀社群應用程式","year":"2024","award":"全國季軍","awarded":true,"category":"UI/UX","tags":["UI/UX","閱讀社群","App設計","AI推薦"],"summary":"以閱讀推薦、社群互動和書店合作為主軸，提出閱讀社群 App 的產品概念。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":"competitions/assets/chaptalk-preview.png","execution":"九大模組同步規劃，串接電子書平台、二手書流通、線下讀書會與 UGC 生態，並以訂閱制與活動合作建立收入路徑。","highlights":"情緒書單與多維度書評機制顯著提升內容匹配度；實體書店合作網絡補足純數位平台的在地觸達缺口。","team":"團體協作","spotlightEn":["App interface design","20+ page business plan","Market research and financial planning"],"focusEn":"UI/UX / Reading community"},{"id":"2025-司法-ai個資風險","title":"司法競賽 ─ 醫療資料二次利用 HIST 方案","year":"2025","award":null,"awarded":false,"category":"法律","tags":["司法競賽","醫療資料","隱私保護","HIST"],"summary":"以醫療資料二次利用為題，整理隱私保護、制度設計和治理框架的提案。","sourceFolder":"04_競賽作品/04_司法競賽","coverImage":null,"execution":"同步推進法規對照與技術工具包，導入動態同意、持續稽核與透明報告，建立法規、技術、治理三位一體的運作框架。","highlights":"把「隱私保護」從阻礙轉為創新底座，讓研究單位、公部門、機構與當事人四方都能在同一治理架構中找到平衡點。","team":"eeoo team：楊雨姮、游欣樺與團隊成員","spotlightEn":["AI risk identification","Personal-data protection argument","Legal-issue articulation"],"focusEn":"Legal challenge / Medical data"},{"id":"2025-fintech-greenpay","title":"易綠卡 GreenPay 永續信用卡（FinTech 校際）","year":"2025","award":null,"awarded":false,"category":"FinTech","tags":["FinTech","ESG","永續信用卡","碳足跡"],"summary":"把永續回饋和信用卡使用情境結合，提出可追蹤消費碳足跡的金融產品構想。","sourceFolder":"04_競賽作品/01_FinTech競賽","coverImage":"competitions/assets/covers/2025-fintech-greenpay.png","execution":"建立綠色商家聯盟，串接 LINE 與銀行 App 的個人化永續報告、排行榜與好友挑戰，同時在銀行端建置 ESG 儀表板。","highlights":"把抽象環保行為轉成可量化、可比較、可分享的使用體驗，建立使用者、商家與銀行三方正循環。","team":"龜蜜龜蜜團隊","spotlightEn":["Sustainable credit-card product concept","Financial-service user scenarios","Full proposal & pitch iteration"],"focusEn":"FinTech / ESG"},{"id":"2025-模擬交易","title":"縱橫期海 Trade like a pro 模擬交易","year":"2025","award":"全國第22名","awarded":true,"category":"FinTech","tags":["期貨","選擇權","模擬交易","風險控管"],"summary":"透過期貨與選擇權模擬競賽，練習交易策略、風控和檢討流程。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"落實盤前情報、盤中紀律、盤後回顧三步驟；團隊分工負責產業追蹤、技術判讀與資金控管，全部交易皆記錄並回測。","highlights":"策略從單一指標進化為結構化模型，並透過停損規則與持倉管理降低情緒交易，讓績效與風險控制同時提升。","team":"金天發大財隊","spotlightEn":["Trading-strategy review","Market-timing judgment","Reflection report"],"focusEn":"Futures / Options"},{"id":"2025-line-pets","title":"LINE PETs 情感連結新解方","year":"2025","award":null,"awarded":false,"category":"AI","tags":["LINE","情緒AI","數位陪伴","社群互動"],"summary":"以 LINE 為載體，提出結合情緒互動與任務機制的 AI 陪伴概念。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"以 LIFF、Messaging API、Beacon 建立技術骨架，並導入任務與勳章機制、原創角色合作、線下活動串聯，提高留存與黏著。","highlights":"核心差異在於主動式陪伴設計，能依語境給出不同情緒回應，讓 AI 互動更貼近真實關係而非工具式回覆。","team":"LINE FRESH 提案團隊：楊雨姮、簡以庭、游欣樺","focusEn":"LINE / Emotional AI"},{"id":"2025-ai金融科技-碳感未來","title":"碳感未來 AI 減碳 ERP","year":"2025","award":null,"awarded":false,"category":"AI","tags":["AI","ERP","碳盤查","綠色金融"],"summary":"以中小企業碳盤查為題，提出結合 ERP、AI 與綠色金融的應用構想。","sourceFolder":"04_競賽作品/03_AI金融科技競賽","coverImage":null,"execution":"採盤查、分析、行動三步驟導入，與銀行及會計師合作提供認證等級報表，並採 SaaS 分級訂閱服務不同規模企業。","highlights":"將碳數據與會計流程置於同一資料管線，避免重工與資訊落差；AI 持續學習可逐步提升減碳建議精準度。","team":"三隻小羊","spotlightEn":["AI × Green finance","Carbon-management scenario design","Competition proposal writing"],"focusEn":"AI / Carbon ERP"},{"id":"2026-永續生活實驗室","title":"食在肚子餓 ResQfood（永續生活實驗室獎）","year":"2026","award":null,"awarded":false,"category":"UI/UX","tags":["UI/UX","App設計","剩食媒合","永續"],"summary":"以剩食媒合為主題，設計同時面向店家與消費者的 App 服務流程。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":"competitions/assets/resqfood-composite.jpg","execution":"初期鎖定雙北校園與辦公商圈，採店家訂閱 + 交易分潤模式，並輸出可供對外使用的 ESG 成果指標，降低中小店家永續溝通門檻。","highlights":"從被動報廢轉為主動預測，透過 AI 與 UI 流程設計同時優化店家備料與消費者找餐路徑，形成雙邊可持續正循環。","team":"食在肚子餓隊：楊雨姮、徐民祐、游欣樺、簡以庭","spotlightEn":["Discovery map and store directory","AI prep-and-stock forecasting","ESG quantitative dashboard"],"focusEn":"UI/UX / App design"},{"id":"2026-俗女手帖-app","title":"俗女手帖 App（個人作品）","year":"2026","award":null,"awarded":false,"category":"UI/UX","tags":["UI/UX","App設計","女性成長","個人作品"],"summary":"以女性生活內容和情緒支持為主題，整理成一套 App 產品概念。","sourceFolder":"04_競賽作品/05_其他競賽","execution":"介面上採用明確主次關係與任務引導，讓使用者從探索內容到完成當日行動都能一條路徑完成；同時保留情緒化文案與視覺溫度。","highlights":"亮點在於把內容型產品做成「可執行的陪伴工具」，不只提供閱讀資訊，也讓每次開啟都能帶來可完成的下一步。","team":"","coverImage":null,"focusEn":"Content experience / Task interaction"},{"id":"2025-潛力種子盃-個股研究","title":"我想要坐飛機 大立光電個股研究（潛力種子盃）","year":"2026","award":null,"awarded":false,"category":"FinTech","tags":["個股研究","財務分析","估值模型","潛力種子盃"],"summary":"以大立光為研究對象，整理產業、財務、估值與風險分析。","sourceFolder":"04_競賽作品/02_潛力種子盃","coverImage":"competitions/assets/covers/2025-潛力種子盃-個股研究.png","execution":"團隊分工追蹤技術趨勢、毛利率與現金流循環，並獨立整理匯率、客戶集中、技術替代與地緣政治風險。","highlights":"從假設、推導到敏感度分析均可追溯，讓投資結論具備可質疑、可修正、可重用的研究品質。","team":"我想要坐飛機隊：潘靜萱、盧琬姍、游欣樺、陳孟臻、張伃昕","spotlightEn":["Valuation methodologies","Industry & company fundamentals analysis","Investment-risk breakdown"],"focusEn":"Stock research / Financial analysis"},{"id":"2025-拾拈溯木","title":"拾拈溯木 創意建構故事盒（U-start 創新創業計畫）","year":"2026","award":null,"awarded":false,"category":"創業競賽","tags":["U-start","創業計畫","木育","永續品牌"],"summary":"以木育故事盒為核心，提出產品化與營運模式的創業提案。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"建立採料、加工、品管供應鏈，串接在地師傅與內容設計；行銷採社群、短影音、線下展覽三路推進並建立品牌 IP。","highlights":"把「永續、教育、創意」三軸整合成可被市場理解的產品敘事，並預留主題化、節慶化、客製化擴充能力。","team":"拾拈溯木團隊（U-start）","spotlightEn":["Education product design","Fundraising and operations plan","Story-box demo"],"focusEn":"U-start / Education product design"},{"id":"2026-edubot","title":"EduBot 早療家庭行動系統（2026 長庚青年老闆築夢計畫）","year":"2026","award":"全國第三","awarded":true,"category":"AI","tags":["早療","AI轉譯","健康科技","創新創業"],"summary":"以早療家庭需求為題，提出把聯評報告轉成日常任務的產品概念。","sourceFolder":"04_競賽作品/05_其他競賽","coverImage":null,"execution":"六大模組整合報告轉譯、提醒、追蹤、儀表板與回診報告。商業模式採 B2C Freemium、B2B 訂閱、B2G 試點並落實資安治理。","highlights":"核心突破在於把「今天該做什麼」說清楚，讓治療服務從診間延伸到 365 天家庭日常，並累積高價值行為數據資產。","team":"EduBot 團隊","focusEn":"Early intervention / AI translation"},{"id":"2026-系統載入中","title":"系統載入中（青年局 AI 課）","year":"2026","award":null,"awarded":false,"category":"培訓","tags":["青年局","AI應用","提案設計","系統思維"],"summary":"整理青年局 AI 課程中的提案內容與學習成果，目前頁面仍在整理中。","maintenance":true,"sourceFolder":"05_進修學習/04_青年局AI課/標題頁——系統載入中","coverImage":null,"execution":"透過提案頁面與內容模組化整理，將課堂實作與應用場景對齊，補上從學習到落地之間常見的斷層。","highlights":"重點在於把 AI 工具應用轉為可複用的流程思維，並強化視覺敘事與文字邏輯，讓提案更具說服力與可讀性。","team":"個人整理作品","focusEn":"Youth Affairs / AI applications"}];
+const carouselRoot=document.querySelector('[data-carousel-root]');
+const carouselTrack=carouselRoot?.querySelector('.competition-carousel');
+const dotsWrap=carouselRoot?.querySelector('.carousel-dots');
+const pauseBtn=carouselRoot?.querySelector('.carousel-toggle');
+const prevBtn=carouselRoot?.querySelector('.carousel-arrow.prev');
+const nextBtn=carouselRoot?.querySelector('.carousel-arrow.next');
+const categoryRail=carouselRoot?.querySelector('.competition-category-rail');
+let activeFilter='all';
+let isPaused=false;
+let autoTimer=null;
+let dotsRaf=0;
+let isCarouselInView=false;
+let isPageVisible=!document.hidden;
+const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const groupOrder=['uiux','FinTech','創業競賽','AI','法律','永續','HR','培訓','其他'];
+const groupLabelsEn={uiux:'UI/UX','FinTech':'FinTech','創業競賽':'Entrepreneurship','AI':'AI','法律':'Legal','永續':'Sustainability','HR':'HR','培訓':'Training','其他':'Other'};
+const groupLabelsZh={uiux:'UI/UX','FinTech':'FinTech','創業競賽':'創業競賽','AI':'AI','法律':'法律','永續':'永續','HR':'HR','培訓':'培訓','其他':'其他'};
+const categoryLabelsEn={'FinTech':'FinTech','創業競賽':'Entrepreneurship','AI':'AI','法律':'Legal','永續':'Sustainability','HR':'HR','培訓':'Training','其他':'Other','UI/UX':'UI/UX'};
+const awardLabelsEn={
+  '作品整理':'Project Summary',
+  '作品介紹':'Project Story',
+  '團體第一名':'1st Place (Team)',
+  '全國第三':'National 3rd Place',
+  '全國季軍':'National 3rd Place',
+  '全國佳作（前10%）':'National Merit (Top 10%)',
+  '全國前六強':'National Top 6',
+  '優選':'Outstanding',
+  '全國季軍（大專組）':'National 3rd Place (College)',
+  '全國第21名':'National Rank #21',
+  '全國第22名':'National Rank #22',
+  '全國季軍（網路行銷組）':'National 3rd Place (Marketing Track)'
+};
+const tagLabelsEn={
+  '創業競賽':'Entrepreneurship','雲林':'Yunlin','地方創生':'Local Revitalization','永續園區':'Sustainable District',
+  'App設計':'App Design','AI推薦':'AI Recommendations','餐飲科技':'Food Tech',
+  '財務規劃':'Financial Planning','健康管理':'Health Management','三明治族群':'Sandwich Generation',
+  '投資模擬':'Investment Simulation','策略驗證':'Strategy Validation','風險管理':'Risk Management','團隊協作':'Team Collaboration',
+  '閱讀社群':'Reading Community','司法競賽':'Legal Competition','醫療資料':'Medical Data','隱私保護':'Privacy Protection',
+  '永續信用卡':'Sustainable Credit Card','碳足跡':'Carbon Footprint','期貨':'Futures','選擇權':'Options',
+  '模擬交易':'Paper Trading','風險控管':'Risk Control','情緒AI':'Affective AI','數位陪伴':'Digital Companionship',
+  '社群互動':'Community Interaction','碳盤查':'Carbon Accounting','綠色金融':'Green Finance',
+  '剩食媒合':'Food Rescue Matching','永續':'Sustainability','女性成長':'Women Growth','個人作品':'Personal Project',
+  '個股研究':'Stock Research','財務分析':'Financial Analysis','估值模型':'Valuation Models','潛力種子盃':'Seed Cup',
+  '創業計畫':'Startup Program','木育':'Wood Education','永續品牌':'Sustainable Branding',
+  '早療':'Early Intervention','AI轉譯':'AI Translation','健康科技':'Health Tech','創新創業':'Innovation & Entrepreneurship',
+  '青年局':'Youth Affairs','AI應用':'AI Applications','提案設計':'Proposal Design','系統思維':'Systems Thinking'
+};
+const competitionCopy={
+  '2024-少年頭家-雲林農穫':{title:'Yunlin Harvest Mall District',summary:'A startup proposal integrating local agriculture, retail, and cultural experiences into a mixed-use district near the high-speed rail area.'},
+  '2024-新創之星-三隻雞腿排':{title:'What Should We Eat App',summary:'An AI-assisted meal decision app designed to reduce food-choice fatigue while balancing budget, nutrition, dietary constraints, and delivery.'},
+  '2025-財務健康三明治':{title:'Financial Wellness Sandwich',summary:'A dual-track platform for the sandwich generation, combining budgeting, nutrition tracking, and caregiving support into one workflow.'},
+  '2023-投資競賽':{title:'TPEx Investment Simulation',summary:'A simulation-based trading project focused on strategy discipline, technical and fundamental judgment, and team execution routines.'},
+  '2024-新創盃':{title:'Chaptalk Reading Community App',summary:'A reading ecosystem with mood-based recommendations, social interaction, and merchant tools to reconnect users with books and local bookstores.'},
+  '2025-司法-ai個資風險':{title:'Legal Challenge — HIST Framework for Secondary Medical Data Use',summary:'A governance proposal combining PETs, legal safeguards, and risk-tier sandbox design to balance innovation with privacy protection.'},
+  '2025-fintech-greenpay':{title:'GreenPay Sustainable Credit Card',summary:'A FinTech concept linking daily spending behavior with measurable low-carbon incentives and ESG-aligned user engagement.'},
+  '2025-模擬交易':{title:'Trade Like a Pro — Paper Trading',summary:'A futures and options simulation project focused on risk controls, multi-factor strategy development, and repeatable execution routines.'},
+  '2025-line-pets':{title:'LINE PETs Emotional Companion',summary:'A proactive AI companion concept on LINE, combining emotional signals, daily nudges, and interaction loops for long-term engagement.'},
+  '2025-ai金融科技-碳感未來':{title:'CarbonSense Future AI Decarbonization ERP',summary:'An AI-enabled ERP concept for SMB carbon inventory and green-finance readiness through scenario-based decarbonization workflows.'},
+  '2026-永續生活實驗室':{title:'ResQfood',summary:'A UI/UX concept for surplus-food matching that connects store-side forecasting with user-side discovery and reservation flows.'},
+  '2026-俗女手帖-app':{title:'Sunu Handbook App',summary:'A personal UI/UX project turning local lifestyle storytelling into a mobile product experience with clear user flows and interaction design.'},
+  '2025-潛力種子盃-個股研究':{title:'Largan Precision Equity Research',summary:'A stock research project covering industry context, valuation models, risk analysis, and structured investment conclusions.'},
+  '2025-拾拈溯木':{title:'Shi Nian Su Mu — Creative Story Construction Box',summary:'A startup proposal translating wood-education values into a product-service model with educational and sustainability outcomes.'},
+  '2026-edubot':{title:'EduBot Early-Intervention Family Action System',summary:'A product concept that transforms clinical reports into daily family actions and structured follow-through for early-intervention contexts.'},
+  '2026-系統載入中':{title:'System Loading (Under Maintenance)',summary:'This project page is temporarily under maintenance and will be updated after assets are finalized.'}
+};
+const hiddenCompetitionIds=new Set([
+  '2025-r財金應用',
+  '2025-記帳士',
+  '2025-高潛力hr'
+]);
+const displayedCompetitions=competitionData
+  .filter(item=>!hiddenCompetitionIds.has(item.id))
+  .sort((a,b)=>{
+    if((b.awarded?1:0)!==(a.awarded?1:0))return (b.awarded?1:0)-(a.awarded?1:0);
+    const yearDiff=Number(b.year||0)-Number(a.year||0);
+    if(yearDiff!==0)return yearDiff;
+    return String(a.title||'').localeCompare(String(b.title||''),'zh-Hant');
+  });
+const uiuxIds=new Set([
+  '2024-新創盃',
+  '2026-永續生活實驗室',
+  '2026-茄芷袋-世代橋接設計',
+  '2026-俗女手帖-app'
+]);
+
+function isUiUxProject(item){
+  return uiuxIds.has(item.id);
+}
+function getItemGroups(item){
+  const groups=[item.category];
+  if(isUiUxProject(item))groups.unshift('uiux');
+  return [...new Set(groups)];
+}
+function buildPosterTitle(item,useZh){
+  const localizedTitle=useZh
+    ? item.title
+    : (competitionCopy[item.id]?.title||'Project Overview');
+  const title=localizedTitle.replace(/：/g,'\n').replace(/\s{2,}/g,' ').trim();
+  return title.length>18 ? `<span class="competition-poster-title small">${title.replace(/\n/g,'<br>')}</span>` : `<span class="competition-poster-title">${title.replace(/\n/g,'<br>')}</span>`;
+}
+function matchesFilter(item,filter){
+  if(filter==='all')return true;
+  if(filter==='uiux')return isUiUxProject(item);
+  return item.category===filter;
+}
+
+function cardWidth(){
+  const card=carouselTrack?.querySelector('.competition-card:not(.is-filtered)');
+  return card ? card.getBoundingClientRect().width+20 : 340;
+}
+function visibleCards(){
+  return displayedCompetitions.filter(item=>matchesFilter(item,activeFilter));
+}
+function renderCategoryRail(){
+  if(!categoryRail)return;
+  const useZh=currentLang==='zh';
+  const labelMap=useZh?groupLabelsZh:groupLabelsEn;
+  const unitLabel=useZh?i18n.zh.projects.projectsUnit:'projects';
+  const counts=groupOrder.map(key=>({
+    key,
+    label:labelMap[key],
+    count:displayedCompetitions.filter(item=>getItemGroups(item).includes(key)).length
+  })).filter(group=>group.count);
+  categoryRail.innerHTML=counts.map(group=>`<a class="competition-category-chip" href="#projects" data-filter-jump="${group.key}"><strong>${group.label}</strong><span>${group.count} ${unitLabel}</span></a>`).join('');
+}
+function renderCompetitions(){
+  if(!carouselTrack)return;
+  const useZh=currentLang==='zh';
+  carouselTrack.innerHTML=displayedCompetitions.map(item=>{
+    const isMaintenance=item.maintenance===true;
+    const gradient=categoryGradients[item.category]||categoryGradients.default;
+    const localizedTitle=useZh
+      ? item.title
+      : (competitionCopy[item.id]?.title||'Project Overview');
+    const localizedSummary=useZh
+      ? item.summary
+      : (competitionCopy[item.id]?.summary||'Project summary is being updated.');
+    const localizedCategory=useZh?(item.category==='UI/UX'?'UI/UX':item.category):(categoryLabelsEn[item.category]||item.category);
+    const localizedAward=useZh
+      ? item.award
+      : (awardLabelsEn[item.award]||item.award);
+    const localizedTags=useZh?item.tags:item.tags.map(tag=>tagLabelsEn[tag]||tag);
+    const media=`<div class="competition-poster">
+        <span class="competition-poster-kicker">${isUiUxProject(item)?(useZh?i18n.zh.projects.appConcept:'App Design Concept'):localizedCategory}</span>
+        ${buildPosterTitle(item,useZh)}
+        <div class="competition-poster-meta">${localizedTags.slice(0,2).map(tag=>`<span>${tag}</span>`).join('')}</div>
+      </div>`;
+    return `<a class="competition-card ${isMaintenance?'is-maintenance':''}" href="${isMaintenance?'#projects':`competitions/${encodeURIComponent(item.id)}${useZh?'':'-en'}.html`}" ${isMaintenance?'aria-disabled="true" tabindex="-1"':''} data-id="${item.id}" data-category="${item.category}" data-uiux="${isUiUxProject(item)?'true':'false'}" style="--card-gradient:${gradient}">
+      <div class="competition-media" style="background:${gradient}">
+        ${media}
+        <span class="competition-pill competition-year">${item.year}</span>
+        <span class="competition-pill competition-award ${(item.awarded&&!isMaintenance)?'':'muted'}">${isMaintenance?(useZh?i18n.zh.projects.maintenance:'Under Maintenance'):(localizedAward||(useZh?i18n.zh.projects.participant:'Participant'))}</span>
+      </div>
+      <div class="competition-body">
+        <span class="competition-category">${localizedCategory}</span>
+        <h3 class="competition-title">${localizedTitle}</h3>
+        <p class="competition-summary">${localizedSummary}</p>
+        <div class="competition-tags">${localizedTags.slice(0,3).map(tag=>`<span class="competition-tag">${tag}</span>`).join('')}</div>
+        <span class="competition-link">${isMaintenance?(useZh?i18n.zh.projects.maintenance:'Under Maintenance'):(useZh?i18n.zh.projects.view:'View Details →')}</span>
+      </div>
+    </a>`;
+  }).join('');
+  applyCompetitionFilter();
+}
+function renderDots(){
+  if(!dotsWrap)return;
+  const useZh=currentLang==='zh';
+  const count=Math.max(1,visibleCards().length);
+  dotsWrap.innerHTML=Array.from({length:count},(_,i)=>`<button class="carousel-dot ${i===0?'active':''}" type="button" aria-label="${useZh?i18n.zh.projects.goToSlide(i+1):`Go to slide ${i+1}`}" data-index="${i}"></button>`).join('');
+}
+function activeCards(){
+  return [...carouselTrack.querySelectorAll('.competition-card:not(.is-filtered)')];
+}
+function scrollToCard(index){
+  const cards=activeCards();
+  if(!cards.length)return;
+  const target=cards[Math.max(0,Math.min(index,cards.length-1))];
+  carouselTrack.scrollTo({
+    left:target.offsetLeft-carouselTrack.offsetLeft,
+    behavior:prefersReducedMotion?'auto':'smooth'
+  });
+}
+function currentIndex(){
+  const width=cardWidth();
+  return Math.round(carouselTrack.scrollLeft/width);
+}
+function updateDots(){
+  const idx=currentIndex();
+  dotsWrap?.querySelectorAll('.carousel-dot').forEach((dot,i)=>dot.classList.toggle('active',i===idx));
+}
+function applyCompetitionFilter(){
+  carouselTrack.querySelectorAll('.competition-card').forEach(card=>{
+    const show=activeFilter==='all'||(activeFilter==='uiux' ? card.dataset.uiux==='true' : card.dataset.category===activeFilter);
+    card.classList.toggle('is-filtered',!show);
+  });
+  carouselTrack.scrollTo({left:0,behavior:prefersReducedMotion?'auto':'smooth'});
+  renderDots();
+  updateDots();
+  scheduleAuto();
+}
+function advanceCarousel(dir=1){
+  const cards=activeCards();
+  if(cards.length<2)return;
+  const next=(currentIndex()+dir+cards.length)%cards.length;
+  scrollToCard(next);
+}
+function canAutoPlay(){
+  return !prefersReducedMotion && isCarouselInView && isPageVisible && !isPaused && activeCards().length>1;
+}
+function scheduleAuto(){
+  clearTimeout(autoTimer);
+  if(!canAutoPlay())return;
+  autoTimer=setTimeout(()=>{
+    advanceCarousel(1);
+    scheduleAuto();
+  },4000);
+}
+carouselRoot?.querySelectorAll('.competition-filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    carouselRoot.querySelectorAll('.competition-filter').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter=btn.dataset.filter;
+    applyCompetitionFilter();
+  });
+});
+categoryRail?.addEventListener('click',e=>{
+  const chip=e.target.closest('[data-filter-jump]');
+  if(!chip)return;
+  e.preventDefault();
+  const targetBtn=carouselRoot.querySelector(`.competition-filter[data-filter="${chip.dataset.filterJump}"]`);
+  targetBtn?.click();
+});
+prevBtn?.addEventListener('click',()=>advanceCarousel(-1));
+nextBtn?.addEventListener('click',()=>advanceCarousel(1));
+dotsWrap?.addEventListener('click',e=>{
+  const dot=e.target.closest('.carousel-dot');
+  if(dot)scrollToCard(Number(dot.dataset.index));
+});
+pauseBtn?.addEventListener('click',()=>{
+  isPaused=!isPaused;
+  pauseBtn.textContent=isPaused
+    ?(currentLang==='zh'?i18n.zh.projects.play:'Play')
+    :(currentLang==='zh'?i18n.zh.projects.pause:'Pause');
+  pauseBtn.setAttribute('aria-pressed',String(isPaused));
+  scheduleAuto();
+});
+['mouseenter','focusin'].forEach(evt=>carouselRoot?.addEventListener(evt,()=>{
+  isPaused=true;
+  scheduleAuto();
+}));
+['mouseleave','focusout'].forEach(evt=>carouselRoot?.addEventListener(evt,()=>{
+  isPaused=pauseBtn?.getAttribute('aria-pressed')==='true';
+  scheduleAuto();
+}));
+carouselTrack?.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'){e.preventDefault();advanceCarousel(1)}
+  if(e.key==='ArrowLeft'){e.preventDefault();advanceCarousel(-1)}
+});
+carouselTrack?.addEventListener('click',e=>{
+  const card=e.target.closest('.competition-card');
+  if(!card||card.classList.contains('is-maintenance'))return;
+  const id=card.dataset.id;
+  if(!id)return;
+  e.preventDefault();
+  const suffix=currentLang==='zh'?'':'-en';
+  window.location.href=`competitions/${encodeURIComponent(id)}${suffix}.html`;
+});
+carouselTrack?.addEventListener('scroll',()=>{
+  if(dotsRaf)return;
+  dotsRaf=requestAnimationFrame(()=>{
+    updateDots();
+    dotsRaf=0;
+  });
+},{passive:true});
+if(carouselRoot){
+  const carouselObserver=new IntersectionObserver(entries=>{
+    isCarouselInView=entries.some(entry=>entry.isIntersecting);
+    scheduleAuto();
+  },{threshold:0.25});
+  carouselObserver.observe(carouselRoot);
+}
+document.addEventListener('visibilitychange',()=>{
+  isPageVisible=!document.hidden;
+  scheduleAuto();
+});
+applyLanguage(savedLang==='zh'?'zh':'en');
+scheduleAuto();
+
+// Active nav
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-80)cur=s.id});
+  nls.forEach(l=>{
+    l.classList.toggle('active',l.getAttribute('href')==='#'+cur);
+  });
+},{passive:true});
+
+// Counter animation for hero stats
+const counters=document.querySelectorAll('.hstat-n');
+const co=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target;
+    const raw=el.dataset.target||el.textContent.trim();
+    el.dataset.target=raw;
+    const decimal=raw.includes('.');
+    const hasPlus=raw.includes('+');
+    const clean=raw.replace(/,/g,'').replace('+','');
+    const target=Number(clean);
+    const startTime=performance.now();
+    const duration=1200;
+    const easeOut=t=>1-Math.pow(1-t,3);
+    const step=now=>{
+      const progress=Math.min(1,(now-startTime)/duration);
+      const value=target*easeOut(progress);
+      if(decimal){
+        el.textContent=value.toFixed(2);
+      }else{
+        const rounded=Math.floor(value);
+        el.textContent=rounded.toLocaleString()+(hasPlus?'+':'');
+      }
+      if(progress<1){
+        requestAnimationFrame(step);
+      }else if(decimal){
+        el.textContent=target.toFixed(2);
+      }else{
+        el.textContent=Math.round(target).toLocaleString()+(hasPlus?'+':'');
+      }
+    };
+    requestAnimationFrame(step);
+    co.unobserve(el);
+  });
+},{threshold:.5});
+counters.forEach(el=>co.observe(el));
+</script>
+</body>
+</html>

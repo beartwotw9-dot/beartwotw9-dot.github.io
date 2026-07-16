@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1012" viewBox="0 0 1800 1012" role="img" aria-labelledby="title desc">
+  <title id="title">n8n Meeting Transcript Automation Workflow</title>
+  <desc id="desc">A portfolio-safe workflow evidence graphic showing meeting audio intake, transcription, AI note structuring, and delivery outputs.</desc>
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#07120d" flood-opacity=".26"/>
+    </filter>
+    <style>
+      .bg{fill:#0f1c17}
+      .panel{fill:#f5f1e8;stroke:#d8e8dd;stroke-width:4}
+      .node{fill:#fffdf7;stroke:#d8cbb9;stroke-width:3}
+      .output{fill:#eef7ef;stroke:#bfd9c6;stroke-width:3}
+      .title{font:700 30px Arial,sans-serif;fill:#ffffff}
+      .lead{font:400 18px Arial,sans-serif;fill:#bdd1c6}
+      .label{font:700 14px Arial,sans-serif;fill:#ffffff}
+      .section{font:700 16px Arial,sans-serif;letter-spacing:.18em;fill:#9b815e;text-transform:uppercase}
+      .nodeTitle{font:700 29px Arial,sans-serif;fill:#315b42}
+      .nodeText{font:400 20px Arial,sans-serif;fill:#62594c}
+      .smallText{font:400 16px Arial,sans-serif;fill:#827664}
+      .chip{font:400 14px Arial,sans-serif;fill:#ccebd9}
+      .line{stroke:#7d715f;stroke-width:5;fill:none;stroke-linecap:round}
+      .dot{fill:#7d715f}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1800" height="1012"/>
+  <text class="title" x="72" y="84">n8n Meeting Transcript Automation</text>
+  <text class="lead" x="72" y="146">Audio upload -&gt; transcription -&gt; AI note structure -&gt; Drive, Sheets, and Chat delivery</text>
+
+  <g filter="url(#softShadow)">
+    <rect class="panel" x="70" y="230" width="1660" height="700" rx="32"/>
+  </g>
+
+  <rect x="100" y="260" width="282" height="48" rx="22" fill="#17a34a"/>
+  <text class="label" x="124" y="289">Workflow evidence</text>
+
+  <text class="section" x="130" y="372">Input</text>
+  <text class="section" x="510" y="372">Processing</text>
+  <text class="section" x="1248" y="372">Outputs</text>
+
+  <g filter="url(#softShadow)">
+    <rect class="node" x="130" y="420" width="292" height="178" rx="26"/>
+    <text class="nodeTitle" x="166" y="484">1. Upload</text>
+    <text class="nodeText" x="166" y="526">Meeting intake form</text>
+    <text class="smallText" x="166" y="562">department / date / audio file</text>
+
+    <rect class="node" x="510" y="420" width="292" height="178" rx="26"/>
+    <text class="nodeTitle" x="546" y="484">2. Transcribe</text>
+    <text class="nodeText" x="546" y="526">Speech-to-text pipeline</text>
+    <text class="smallText" x="546" y="562">recording becomes transcript</text>
+
+    <rect class="node" x="890" y="420" width="292" height="178" rx="26"/>
+    <text class="nodeTitle" x="926" y="484">3. Structure</text>
+    <text class="nodeText" x="926" y="526">AI meeting notes</text>
+    <text class="smallText" x="926" y="562">summary / actions / follow-up</text>
+
+    <rect class="output" x="1248" y="382" width="360" height="270" rx="30"/>
+    <rect class="node" x="1282" y="418" width="292" height="70" rx="22"/>
+    <text class="nodeText" x="1320" y="461" font-weight="700">Drive archive</text>
+    <rect class="node" x="1282" y="508" width="292" height="70" rx="22"/>
+    <text class="nodeText" x="1320" y="551" font-weight="700">Sheets index</text>
+    <rect class="node" x="1282" y="598" width="292" height="70" rx="22"/>
+    <text class="nodeText" x="1320" y="641" font-weight="700">Chat notification</text>
+
+    <rect class="node" x="130" y="728" width="388" height="112" rx="24"/>
+    <text class="nodeText" x="324" y="775" text-anchor="middle" font-weight="700" fill="#315b42">Why it matters</text>
+    <text class="nodeText" x="324" y="812" text-anchor="middle">Less repeated meeting admin</text>
+
+    <rect class="node" x="706" y="728" width="388" height="112" rx="24"/>
+    <text class="nodeText" x="900" y="775" text-anchor="middle" font-weight="700" fill="#315b42">Structured result</text>
+    <text class="nodeText" x="900" y="812" text-anchor="middle">Transcript, notes, and tasks</text>
+
+    <rect class="node" x="1282" y="728" width="388" height="112" rx="24"/>
+    <text class="nodeText" x="1476" y="775" text-anchor="middle" font-weight="700" fill="#315b42">Delivery logic</text>
+    <text class="nodeText" x="1476" y="812" text-anchor="middle">Drive / Sheets / Chat</text>
+  </g>
+
+  <path class="line" d="M422 509 H510"/>
+  <path class="line" d="M802 509 H890"/>
+  <path class="line" d="M1182 509 H1248"/>
+  <circle class="dot" cx="422" cy="509" r="11"/>
+  <circle class="dot" cx="802" cy="509" r="11"/>
+  <circle class="dot" cx="1182" cy="509" r="11"/>
+
+  <g>
+    <rect x="70" y="960" width="120" height="38" rx="18" fill="#11251d" stroke="#17a34a" stroke-width="2"/>
+    <text class="chip" x="130" y="984" text-anchor="middle">n8n Form</text>
+    <rect x="208" y="960" width="134" height="38" rx="18" fill="#11251d" stroke="#17a34a" stroke-width="2"/>
+    <text class="chip" x="275" y="984" text-anchor="middle">Transcription</text>
+    <rect x="360" y="960" width="134" height="38" rx="18" fill="#11251d" stroke="#17a34a" stroke-width="2"/>
+    <text class="chip" x="427" y="984" text-anchor="middle">AI Notes</text>
+    <rect x="512" y="960" width="150" height="38" rx="18" fill="#11251d" stroke="#17a34a" stroke-width="2"/>
+    <text class="chip" x="587" y="984" text-anchor="middle">Google Drive</text>
+    <rect x="680" y="960" width="150" height="38" rx="18" fill="#11251d" stroke="#17a34a" stroke-width="2"/>
+    <text class="chip" x="755" y="984" text-anchor="middle">Google Chat</text>
+  </g>
+</svg>
