@@ -877,11 +877,17 @@ footer{
       <div class="sec-rule" style="margin:0 auto 0"></div>
     </div>
     <div class="reveal">
-      <p class="sub-arc">Finance → Operations → Product → Organizational Development</p>
+      <p class="sub-arc">Finance → Operations → Product → Organizational Development → AI Systems Development</p>
       <div class="tl-list">
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-head"><span class="tl-role">Organizational Development Associate</span><span class="tl-badge">2026.04 — Present</span></div>
+          <div class="tl-head"><span class="tl-role">AI Application Systems Development Intern</span><span class="tl-badge">2026.07 — Present</span></div>
+          <div class="tl-org">Chengshi Construction Development Co., Ltd. · Taipei</div>
+          <ul class="tl-list-items"></ul>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-head"><span class="tl-role">Organizational Development Associate</span><span class="tl-badge">2026.04 — 2026.07</span></div>
           <div class="tl-org">Chandin Electrical Engineering Co., Ltd. · Taipei</div>
           <ul class="tl-list-items">
             <li>Partnered directly with the CEO to drive company-level project management and cross-functional execution.</li>
@@ -965,6 +971,14 @@ footer{
         <ul class="mini-list">
           <li>Joined PM discussions and case learning to strengthen product thinking.</li>
           <li>Collaborated with cross-functional peers on problem framing and execution.</li>
+        </ul>
+      </article>
+      <article class="mini-card">
+        <h3>AI Career Practice Camp Participant</h3>
+        <div class="mini-meta">New Taipei City Government Youth Department · 2025.12 — 2026.01</div>
+        <ul class="mini-list">
+          <li>Practiced the full project process through nearly 10 AI workshops, from problem definition and MVP planning to AI-assisted presentations, prototyping, and pitching.</li>
+          <li>Co-developed JobSpark, an AI career agent concept that scans job-market demand, identifies skill gaps, and generates personalized learning paths.</li>
         </ul>
       </article>
       <article class="mini-card">
@@ -1483,8 +1497,9 @@ const i18n={
     experience:{
       eyebrow:'工作經歷',
       title:'工作經歷',
-      arc:'財務 → 營運 → 產品 → 組織發展',
+      arc:'財務 → 營運 → 產品 → 組織發展 → AI 應用系統開發',
       roles:[
+        'AI 應用系統開發實習生',
         '組織發展專員',
         '產品團隊實習生',
         '人力資源助理',
@@ -1493,6 +1508,7 @@ const i18n={
         '財務長'
       ],
       orgs:[
+        '丞石建築開發股份有限公司 · 台北',
         '成鼎電工業有限公司 · 台北',
         'IMAG Marketing · 台北',
         '成鼎電工業有限公司 · 台北',
@@ -1501,6 +1517,7 @@ const i18n={
         '國立臺北商業大學財務金融系系學會'
       ],
       bullets:[
+        [],
         [
           '與執行長直接協作，推動公司層級專案管理與跨部門任務落地。',
           '擔任教育訓練總負責人，完成 <strong>10+</strong> 場內訓課程規劃與執行。',
@@ -1537,8 +1554,9 @@ const i18n={
       items:[
         {title:'人資小週末學員',meta:'人資小週末社群（學員） · 2026.02 — 至今',bullets:['參與 HR 主題學習與職涯交流活動。','將社群觀點應用在履歷優化與面試準備。']},
         {title:'PM 組組員',meta:'XChange · 2026.04 — 至今',bullets:['參與 PM 討論與案例學習，強化產品思維。','與跨領域夥伴協作，提升問題定義與執行能力。']},
+        {title:'AI 實戰職涯營學員',meta:'新北市政府青年局 · 2025.12 — 2026.01',bullets:['參與近 10 場 AI 實作工作坊，練習從痛點定義、MVP 規劃到 AI 輔助簡報、Prototype 與 Pitch。','與團隊完成 JobSpark 概念專案，針對求職者的技能落差，設計市場掃描、履歷落差分析與個人化學習路徑。']},
         {title:'人資組組員',meta:'起駛簡報表達教育協會 · 2025.08 — 至今',bullets:['協調跨部門溝通與進度追蹤，支援團隊協作。','支援人資行政、資源規劃與流程文件整理。']},
-        {title:'財務組員',meta:'起駛簡報表達教育協會 · 2024.07 — 2025.08',bullets:['負責活動與日常收據稽核，管理 NT$200,000+ 支出。','協助與會計師事務所對接報稅與文件交接。']}
+        {title:'財務組組員',meta:'起駛簡報表達教育協會 · 2024.07 — 2025.08',bullets:['負責活動與日常收據稽核，管理 NT$200,000+ 支出。','協助與會計師事務所對接報稅與文件交接。']}
       ]
     },
     projects:{eyebrow:'競賽作品集',title:'競賽作品集',filters:{all:'全部',uiux:'UI/UX',FinTech:'FinTech','創業競賽':'創業競賽',AI:'AI','法律':'法律','永續':'永續',HR:'HR','培訓':'培訓','其他':'其他'},pause:'暫停',play:'播放',prev:'上一張',next:'下一張',carousel:'專案輪播',position:'輪播位置',goToSlide:(n)=>`前往第 ${n} 張`,view:'查看詳情 →',maintenance:'維修中',participant:'參賽',appConcept:'App 設計提案',projectsUnit:'件作品'},
@@ -1611,10 +1629,11 @@ const i18n={
     experience:{
       eyebrow:'Experience',
       title:'Work Experience',
-      arc:'Finance → Operations → Product → Organizational Development',
-      roles:['Organizational Development Associate','Product Team Intern','Human Resources Assistant','Operations Intern','Finance Intern','Director of Finance'],
-      orgs:['Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','IMAG Marketing · Taipei','20th Student Association of Department of Finance, NTUB'],
+      arc:'Finance → Operations → Product → Organizational Development → AI Systems Development',
+      roles:['AI Application Systems Development Intern','Organizational Development Associate','Product Team Intern','Human Resources Assistant','Operations Intern','Finance Intern','Director of Finance'],
+      orgs:['Chengshi Construction Development Co., Ltd. · Taipei','Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','Chandin Electrical Engineering Co., Ltd. · Taipei','IMAG Marketing · Taipei','IMAG Marketing · Taipei','20th Student Association of Department of Finance, NTUB'],
       bullets:[
+        [],
         ['Partnered directly with the CEO to drive company-level project management and cross-functional execution.','Led corporate learning initiatives, delivering <strong>10+</strong> internal training sessions.','Led DPA award application, group insurance planning, title framework, and organization design projects, while supporting Odoo ERP implementation and AI Studio-based documentation workflows.'],
         ['Designed QA coverage across <strong>9</strong> modules and <strong>50+</strong> test cases for Social War Room.','Owned bug tracking in Linear and led migration of issues from Asana.','Built a pipeline of <strong>60</strong> FriendPass leads to support growth and partnership development.'],
         ['Conducted <strong>20+</strong> online interviews and observed <strong>50+</strong> interviews, contributing to a more structured interviewing process.','Revised <strong>10+</strong> internal policies and helped establish a standardized onboarding workflow.','Planned and facilitated <strong>4</strong> employee training sessions, including serving as lead presenter for one program.'],
@@ -1629,6 +1648,7 @@ const i18n={
       items:[
         {title:'HR Learning Fellow',meta:'HR Weekend Community · 2026.02 — Present',bullets:['Participated in HR-focused learning and career exchange sessions.','Applied insights to resume refinement and interview preparation.']},
         {title:'Product Management Cohort Member',meta:'XChange · 2026.04 — Present',bullets:['Joined PM discussions and case learning to strengthen product thinking.','Collaborated with cross-functional peers on problem framing and execution.']},
+        {title:'AI Career Practice Camp Participant',meta:'New Taipei City Government Youth Department · 2025.12 — 2026.01',bullets:['Practiced the full project process through nearly 10 AI workshops, from problem definition and MVP planning to AI-assisted presentations, prototyping, and pitching.','Co-developed JobSpark, an AI career agent concept that scans job-market demand, identifies skill gaps, and generates personalized learning paths.']},
         {title:'Human Resources Team Member',meta:'Cheese Presentation Education Association · 2025.08 — Present',bullets:['Coordinated cross-functional communication and progress tracking to support team execution.','Supported HR administration, resource planning, and process documentation.']},
         {title:'Finance Team Member',meta:'Cheese Presentation Education Association · 2024.07 — 2025.08',bullets:['Managed receipts and expense records for major events, covering NT$200,000+ in transactions.','Supported financial documentation and coordination with external accounting partners.']}
       ]
