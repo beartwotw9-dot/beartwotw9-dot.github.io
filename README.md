@@ -1,5 +1,6 @@
-# Dora Yu Portfolio
+# beartwotw9-dot.github.io
 
-Public GitHub Pages source for Dora Yu's personal portfolio website.
+This address now redirects to the new portfolio: https://dora-portfolio.doratwotw.workers.dev/
 
-This repository intentionally contains only the static website and its public assets.
+Every path redirects (GitHub Pages serves `404.html` for unknown paths); English pages (`/en/`, `*-en.html`) go to `/en/`.
+The previous static site is preserved in this repo's git history (commit a114374).
